@@ -8,7 +8,7 @@ $pw = $_POST['password'];
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "partymannia";
+    $dbname = "partymania";
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
     // Check connection
