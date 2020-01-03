@@ -8,7 +8,7 @@ $pw = $_POST['pw'];
 echo $name;
 echo $email;
 echo $phone;
-echo $password;
+echo $pw;
 
     $servername = "localhost";
     $username = "root";
@@ -30,5 +30,7 @@ echo $password;
 
     echo "hitapan";
     $conn->close();
+
+    echo '<center><img src="https://cdn.kapwing.com/final_5d6136c54ca1f200143d6d6b_13751.jpg"></center>';
 
 ?>
