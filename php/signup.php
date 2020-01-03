@@ -5,11 +5,6 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $pw = $_POST['pw'];
 
-echo $name;
-echo $email;
-echo $phone;
-echo $pw;
-
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -28,7 +23,6 @@ echo $pw;
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
-    echo "hitapan";
     $conn->close();
 
     echo '<center><img src="https://cdn.kapwing.com/final_5d6136c54ca1f200143d6d6b_13751.jpg"></center>';
