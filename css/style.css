@@ -79,3 +79,13 @@ hr {
   margin-top: 4rem;
   float: right;
 }
+
+input{
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: solid 3px #f56;
+  border-radius: 10px;
+  font-size: 14px;
+}
