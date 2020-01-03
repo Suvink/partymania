@@ -25,6 +25,6 @@ $pw = $_POST['pw'];
 
     $conn->close();
 
-    echo '<center><img src="https://cdn.kapwing.com/final_5d6136c54ca1f200143d6d6b_13751.jpg"></center>';
+    echo '<center><img src="https://cdn.kapwing.com/final_5d6136c54ca1f200143d6d6b_13751.jpg" style="width:300px;"></center>';
 
 ?>
