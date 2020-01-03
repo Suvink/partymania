@@ -5,6 +5,11 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $pw = $_POST['password'];
 
+echo $name;
+echo $email;
+echo $phone;
+echo $password;
+
     $servername = "localhost";
     $username = "root";
     $password = "";
