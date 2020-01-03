@@ -15,7 +15,7 @@
         <div class="loginCard">
             <img src="http://bit.ly/37o7EeC">
             <h1>Signup</h1>
-            <form class="loginForm">
+            <form class="loginForm" method="POST" action="php/signup.php">
                 <input type="text" name="name" placeholder="Your Name" width="500px" required>
                 <br>
                 <input type="email" name="email" placeholder="Your Email" width="500px" required>
@@ -28,7 +28,7 @@
                 <input type="checkbox" name="eula" style="width: 30px !important;" required>I hereby agree to terms and conditions.
                 <br>
                 <br>
-                <button style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Login</button>
+                <button type="submit" value="submit" style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Login</button>
             </form>
         </div>
     </center>
