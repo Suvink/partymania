@@ -23,6 +23,7 @@ $pw = $_POST['password'];
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
+    echo "hitapan";
     $conn->close();
 
 ?>
