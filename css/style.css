@@ -89,3 +89,25 @@ input{
   border-radius: 10px;
   font-size: 14px;
 }
+
+.overall-card {
+    margin: 1rem;
+    float: left;
+    width: 29%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  a:hover{
+      cursor: pointer;
+  }
+
+  .job-details{
+    margin: 1rem;
+    float: left;
+    width: 29%;
+    padding: 10px;
+  }
+
+  
