@@ -1,6 +1,7 @@
 <?php
 session_start();
-
+//Login
+if ( isset( $_POST['submit'] ) ){
     //Database Connection details  
     $servername = "localhost";
     $username = "root";
@@ -12,9 +13,8 @@ session_start();
     if ($con->connect_error) {
         die("Connection failed: " . $con->connect_error);
     } 
-
-    $email = $_POST['email'];
-    $pw = $_POST['pw'];
+    $email = $_REQUEST['email'];
+    $pw = $_REQUEST['pw'];
     echo $email;
     echo $pw;
     echo "hari";
@@ -23,13 +23,13 @@ session_start();
         $row = mysqli_fetch_assoc($result);
         echo $row["id"];
         $_SESSION['userid'] = $row["id"];
-        //header('Location: ../profile.php');
+        header('Location: ../profile.php');
     }
     else{
         echo "Wade awl";
-        //header('Location: ../login.html');
+        header('Location: ../login.html');
     }
-
+}
 //Logout
 if ( isset( $_POST['logout'] ) ){
     echo "hiiih";
