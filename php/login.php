@@ -23,11 +23,11 @@ session_start();
         $row = mysqli_fetch_assoc($result);
         echo $row["id"];
         $_SESSION['userid'] = $row["id"];
-        header('Location: ../profile.php');
+        //header('Location: ../profile.php');
     }
     else{
         echo "Wade awl";
-        header('Location: ../login.html');
+        //header('Location: ../login.html');
     }
 
 //Logout
