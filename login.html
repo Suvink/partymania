@@ -15,13 +15,13 @@
         <div class="loginCard">
             <img src="http://bit.ly/37o7EeC">
             <h1>Login</h1>
-            <div class="loginForm">
+            <form class="loginForm" method="POST" action="./php/login.php">
                 <input type="email" name="email" placeholder="Your Email" width="500px" required>
                 <br>
-                <input type="password" name="password" placeholder="Your password" width="500px" required>
+                <input type="password" name="pw" placeholder="Your password" width="500px" required>
                 <br>
-                <button style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Login</button>
-            </div>
+                <button type="submit" value="submit" style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Login</button>
+            </form>
         </div>
     </center>
 </body>
