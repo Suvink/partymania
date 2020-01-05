@@ -19,7 +19,7 @@ if ( isset( $_POST['submit'] ) ){
     echo $pw;
     echo "hari";
     $result = mysqli_query($con, 'SELECT id FROM users WHERE email="'.$email.'" AND password="'.$pw.'"');
-    echo $result;
+    //echo $result;
     if(mysqli_num_rows($result) == 1){
         $row = mysqli_fetch_assoc($result);
         echo $row["id"];
