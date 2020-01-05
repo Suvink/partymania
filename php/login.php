@@ -1,7 +1,6 @@
 <?php
 session_start();
-//Login
-if ( isset( $_POST['submit'] ) ){
+
     //Database Connection details  
     $servername = "localhost";
     $username = "root";
@@ -13,8 +12,9 @@ if ( isset( $_POST['submit'] ) ){
     if ($con->connect_error) {
         die("Connection failed: " . $con->connect_error);
     } 
-    $email = $_REQUEST['email'];
-    $pw = $_REQUEST['pw'];
+
+    $email = $_POST['email'];
+    $pw = $_POST['pw'];
     echo $email;
     echo $pw;
     echo "hari";
@@ -29,7 +29,7 @@ if ( isset( $_POST['submit'] ) ){
         echo "Wade awl";
         header('Location: ../login.html');
     }
-}
+
 //Logout
 if ( isset( $_POST['logout'] ) ){
     echo "hiiih";
