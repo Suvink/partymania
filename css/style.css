@@ -138,6 +138,12 @@ input{
     border-radius: 10px;
 
   }
+  .form-outline{
+    background-color: lightgray;
+    width: 70%;
+    padding: 20px;
+    border-radius: 30px;
+  }
   
 
 
