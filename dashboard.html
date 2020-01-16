@@ -53,8 +53,8 @@
         <center>
             <h2>Job #132453</h2>
             <div class="row">
-                <button>Update Order</button>
-                <button style="margin-left: 2rem;">Cancel Order</button>
+                <button onclick="request();">Update Order</button>
+                <button style="margin-left: 2rem;" onclick="request();">Cancel Order</button>
             </div>
         </center>
         <div class="row" style="margin-top: 5rem;">
@@ -80,7 +80,12 @@
                     </div>
                 </div>
             </center>
-
         </div>
     </section>
+
+    <script>
+        function request(){
+            alert("Your request has been sent!");
+        }
+    </script>
 </body>

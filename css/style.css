@@ -145,6 +145,28 @@ input{
     border-radius: 30px;
   }
   
+  /* ADMIN PAGE */
+  #customerData {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #customerData td, #customerData th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  #customerData tr:nth-child(even){background-color: #f2f2f2;}
+
+  #customerData th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #F56;
+    color: white;
+    text-align: center;
+  }
 
 
   
