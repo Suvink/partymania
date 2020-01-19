@@ -35,11 +35,11 @@
             <tr>
                 <th>Customer Id</th>
                 <th>Customer Name</th>
-                <th>Phone Number</th>
-                <th>Order ID</th>
-                <th>Date</th>
-                <th>Venue</th>
+                <th>Event Date</th>
+                <th>Event Venue</th>
                 <th>Participants</th>
+                <th>Package</th>
+                <th>Remarks</th>
             </tr>
             <?php
             session_start();
@@ -54,7 +54,7 @@
                     }
                 }
                 else{
-                    echo "0 results";
+                    echo "No results";
                 }
             $con-> close();
 
