@@ -16,7 +16,7 @@ if ( isset( $_POST['submit'] ) ){
         echo $row["id"];
         $_SESSION['userid'] = $row["id"];
         echo $_SESSION['userid'];
-        //header('Location: ../dashboard.php');
+        header('Location: ../dashboard.php');
     }
     else{
         echo "Wade awl";

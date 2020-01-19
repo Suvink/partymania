@@ -1,7 +1,8 @@
 <?php
     require_once 'db.php';
+    session_start();
     $customer_id = $_SESSION['userid'];
-    
+
     if ( isset( $_POST['submit'] ) ){
     $customer_name = $_REQUEST['cname'];
     $event_date = $_REQUEST['cdate'];
