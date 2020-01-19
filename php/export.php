@@ -4,7 +4,7 @@
     require_once 'db.php';
 
     //get records from database
-    $query = $con->query("SELECT * FROM orders ORDER BY ID DESC");
+    $query = $con->query("SELECT * FROM orders");
     
     if($query->num_rows > 0){
         $delimiter = ",";
