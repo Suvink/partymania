@@ -24,16 +24,16 @@ if ( isset( $_POST['submit'] ) ){
         $row = mysqli_fetch_assoc($result);
         echo $row["id"];
         $_SESSION['userid'] = $row["id"];
-        //header('Location: ../profile.php');
+        header('Location: ../dashboard.php');
     }
     else{
         echo "Wade awl";
-        //header('Location: ../login.html');
+        header('Location: ../login.html');
     }
 }
 //Logout
 if ( isset( $_POST['logout'] ) ){
-    echo "hiiih";
+    echo "Logging Out";
     session_destroy();
     header("Location: ../login.html");
 }

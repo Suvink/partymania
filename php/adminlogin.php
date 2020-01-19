@@ -23,7 +23,7 @@ if ( isset( $_POST['submit'] ) ){
     if(mysqli_num_rows($result) == 1){
         $row = mysqli_fetch_assoc($result);
         echo $row["id"];
-        $_SESSION['admin'] = $row["id"];
+        $_SESSION['adminid'] = $row["id"];
         header('Location: ../admin.php');
     }
     else{
