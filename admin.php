@@ -43,7 +43,7 @@
             </tr>
             <?php
             session_start();
-            require_once 'db.php';
+            require_once 'php/db.php';
             $cid = $_SESSION['adminid'];
             $sql = "SELECT * FROM order WHERE customerid='$cid'";
             $result = $con-> query($sql);
