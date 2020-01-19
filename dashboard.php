@@ -1,5 +1,11 @@
-<html>
 
+<?php
+session_start();
+if(!isset($_SERVER['HTTP_REFERER'])){
+    header('Location: login.html?invalid');
+}
+?>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

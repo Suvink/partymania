@@ -1,5 +1,11 @@
+<?php
+    session_start();
+    if(!isset($_SERVER['HTTP_REFERER'])){
+        header('Location: login.html?invalid');
+    }
+    
+?>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +37,7 @@
 
         <center>
             <div class="form-outline">
-                <form method="POST" action="./php/add.php"> 
+                <form method="POST" action="./php/additem.php"> 
                     <h1>Basic Details</h1>
                     <input type="text" name="cname" placeholder="Customer's Name" width="500px" style="width: 70%;" required>
                     <input type="date" name="cdate" placeholder="Date of the event" width="500px" style="width: 70%;" required>
