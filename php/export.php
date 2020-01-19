@@ -18,7 +18,7 @@
         
         //output each row of the data, format line as csv and write to file pointer
         while($row = $query->fetch_assoc()){
-            $status = ($row['status'] == '1')?'Active':'Inactive';
+            //$status = ($row['status'] == '1')?'Active':'Inactive';
             $lineData = array($row['customerid'],$row["name"],$row["date"],$row["venue"],$row["participants"],$row["package"], $row["remarks"]);
             fputcsv($f, $lineData, $delimiter);
         }
