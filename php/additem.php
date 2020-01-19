@@ -16,7 +16,6 @@
     }
     if ($con->query($sql) === TRUE) {
         echo("Done");
-        echo "<script>alert('Successfully Added!');</script>";
         header('Location: ../dashboard.php?success');
     } else {
         echo "Error: " . $sql . "<br>" . $con->error;
