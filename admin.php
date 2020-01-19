@@ -23,10 +23,10 @@
 
     <div class="welcome">
         <h3 style="display:inline-block;margin-top: 10px;">Welcome Dilhani</h3>
-        <form action="php/export.php" method="POST">
+        <form action="php/export.php" method="POST" style="display: inline-block">
             <button style="display:inline-block; float: right; margin-left: 2rem;" type="submit" name="submit"><i class="fa fa-download"></i>&nbsp;Download Report</button>
         </form>
-        <form>
+        <form style="display: inline-block"> 
             <button style="display:inline-block; float: right; margin-left: 2rem;"><i class="fa fa-plus"></i>&nbsp;Add New Event</button>
         </form>
     </div>
