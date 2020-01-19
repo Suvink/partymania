@@ -2,7 +2,7 @@
 session_start();
 //Login
 if ( isset( $_POST['submit'] ) ){
-    require 'db.php';
+    include 'db.php';
     $email = $_REQUEST['email'];
     $pw = $_REQUEST['pw'];
     echo $email;
