@@ -1,6 +1,7 @@
 <html>
 <!--  -->
 <?php
+session_start();
 echo $_SESSION['adminid'];
 ?>
 <head>
