@@ -15,6 +15,7 @@ if ( isset( $_POST['submit'] ) ){
         $row = mysqli_fetch_assoc($result);
         echo $row["id"];
         $_SESSION['userid'] = $row["id"];
+        echo $_SESSION['userid'];
         header('Location: ../dashboard.php');
     }
     else{
