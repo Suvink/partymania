@@ -13,6 +13,14 @@ if(!isset($_SERVER['HTTP_REFERER'])){
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script>
+        window.onload = function () {
+            let cat = window.location.href;
+            if(cat == "http://35.247.185.195/partymania/dashboard.php?success"){
+                alert("Successfully Added the Order!");
+            }
+        }
+    </script>
     <title>PartyMania!</title>
 </head>
 

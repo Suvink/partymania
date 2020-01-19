@@ -11,12 +11,13 @@
     $event_package = $_REQUEST['cpackage'];
     $additional_details = $_REQUEST['cadditional'];
     
-
     $sql=  "INSERT INTO orders (customerid, name, date, venue, participants, package, remarks) 
                 VALUES ('$customer_id', '$customer_name', '$event_date', '$event_venue', '$event_participants', '$event_package', '$additional_details')";
     }
     if ($con->query($sql) === TRUE) {
         echo("Done");
+        echo "<script>alert('Successfully Added!');</script>";
+        header('Location: ../dashboard.php?success');
     } else {
         echo "Error: " . $sql . "<br>" . $con->error;
     }
