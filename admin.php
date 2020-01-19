@@ -1,3 +1,10 @@
+
+<?php
+    session_start();
+    if(!isset($_SERVER['HTTP_REFERER'])){
+        header('Location: login.html?invalid');
+    }
+?>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -50,7 +57,7 @@
             session_start();
             require_once 'php/db.php';
             $cid = $_SESSION['adminid'];
-            echo $cid;
+            //echo $cid;
             $sql = "SELECT * FROM orders";
             $result = $con-> query($sql);
                 if($result-> num_rows > 0){
