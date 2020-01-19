@@ -49,7 +49,7 @@
             $result = $con-> query($sql);
                 if($result-> num_rows > 0){
                     while($row = $result-> fetch_assoc()){
-                        echo "<tr><td>".row["customerid"]."</td><td>".row["name"]."</td><td>".row["date"]."</td><td>".row["venue"]."</td><td>".row["participants"]."</td><td>".row["package"]."</td><td>".row["remarks"]."</td><td>";
+                        echo "<tr><td>".$row["customerid"]."</td><td>".$row["name"]."</td><td>".$row["date"]."</td><td>".$row["venue"]."</td><td>".$row["participants"]."</td><td>".$row["package"]."</td><td>".$row["remarks"]."</td><td>";
                     }
                 }
                 else{
