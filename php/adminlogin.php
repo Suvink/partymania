@@ -2,17 +2,7 @@
 session_start();
 //Login
 if ( isset( $_POST['submit'] ) ){
-    //Database Connection details  
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "partymania";
-    // Create connection
-    $con = new mysqli($servername, $username, $password, $dbname);
-    // Check connection
-    if ($con->connect_error) {
-        die("Connection failed: " . $con->connect_error);
-    } 
+    require 'db.php';
     $email = $_REQUEST['email'];
     $pw = $_REQUEST['pw'];
     echo $email;
