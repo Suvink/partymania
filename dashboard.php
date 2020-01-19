@@ -30,7 +30,7 @@ if(!isset($_SERVER['HTTP_REFERER'])){
 
     <div class="welcome">
         <h3 style="display:inline-block;margin-top: 10px;">Welcome Dilhani</h3>
-        <button style="display:inline-block; float: right;"><i class="fa fa-plus"></i>&nbsp;<a href="add.php">Add New Event</a></button>
+        <button style="display:inline-block; float: right;"><i class="fa fa-plus"></i>&nbsp;<a href="add.php" style="color: #f56a6a !important;">Add New Event</a></button>
     </div>
 
     <section class="overall">
