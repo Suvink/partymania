@@ -1,9 +1,4 @@
 <html>
-<!--  -->
-<?php
-session_start();
-echo $_SESSION['adminid'];
-?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,11 +41,11 @@ echo $_SESSION['adminid'];
                 <th>Remarks</th>
             </tr>
             <?php
-            //session_start();
+            session_start();
             require_once 'php/db.php';
             $cid = $_SESSION['adminid'];
             echo $cid;
-            $sql = "SELECT * FROM orders WHERE customerid='$cid'";
+            $sql = "SELECT * FROM orders";
             $result = $con-> query($sql);
                 if($result-> num_rows > 0){
                     while($row = $result-> fetch_assoc()){
