@@ -1,5 +1,8 @@
 <html>
-<!-- $_SESSION['adminid'] -->
+<!--  -->
+<?php
+echo $_SESSION['adminid'];
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
