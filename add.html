@@ -31,12 +31,12 @@
 
         <center>
             <div class="form-outline">
-                <form>
+                <form method="POST" action="./php/add.php"> 
                     <h1>Basic Details</h1>
-                    <input type="text" name="name" placeholder="Customer's Name" width="500px" style="width: 70%;" required>
-                    <input type="date" name="" placeholder="Date of the event" width="500px" style="width: 70%;" required>
-                    <input type="text" name="name" placeholder="Address of the Venue" width="500px" style="width: 70%;" required>
-                    <input type="number" name="" placeholder="Expected no.of participants" width="500px" style="width: 70%;" required>
+                    <input type="text" name="cname" placeholder="Customer's Name" width="500px" style="width: 70%;" required>
+                    <input type="date" name="cdate" placeholder="Date of the event" width="500px" style="width: 70%;" required>
+                    <input type="text" name="cvenue" placeholder="Address of the Venue" width="500px" style="width: 70%;" required>
+                    <input type="number" name="cparticipants" placeholder="Expected no.of participants" width="500px" style="width: 70%;" required>
 
                     <h1>Package Details</h1>
                     <div class="row">
@@ -56,15 +56,14 @@
                         </div>
                     </div>
 
-                    <input type="radio"name="bday" value="Birthday Package" style="width: 30px;">Birthday Package
+                    <input type="radio"name="cpackage" value="Birthday Package" style="width: 30px;">Birthday Package
                     <br>
-                    <input type="radio"name="bday" value="bday" style="width: 30px;">Farewell Package
+                    <input type="radio"name="cpackage" value="bday" style="width: 30px;">Farewell Package
 
                     <h1>Additional Details</h1>
-                    <input type="text" name="name" placeholder="Additional Notes" width="500px" style="width: 70%;height: 30%;" required>
+                    <input type="text" name="cadditional" placeholder="Additional Notes" width="500px" style="width: 70%;height: 30%;" required>
                     <br><br>
                     <button type="submit" name="submit" value="submit" style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Add Order</button>
-
                 </form>
             </div>
         </center>
