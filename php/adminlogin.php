@@ -23,17 +23,17 @@ if ( isset( $_POST['submit'] ) ){
     if(mysqli_num_rows($result) == 1){
         $row = mysqli_fetch_assoc($result);
         echo $row["id"];
-        $_SESSION['userid'] = $row["id"];
-        //header('Location: ../profile.php');
+        $_SESSION['admin'] = $row["id"];
+        header('Location: ../admin.php');
     }
     else{
         echo "Wade awl";
-        //header('Location: ../login.html');
+        header('Location: ../adminlogin.html');
     }
 }
 //Logout
 if ( isset( $_POST['logout'] ) ){
     echo "hiiih";
     session_destroy();
-    header("Location: ../login.html");
+    header("Location: ../adminlogin.html");
 }
