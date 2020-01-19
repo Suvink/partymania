@@ -144,6 +144,9 @@ input{
     padding: 20px;
     border-radius: 30px;
   }
+  .package-item{
+    text-align: left !important;
+  }
   
   /* ADMIN PAGE */
   #customerData {
@@ -167,6 +170,7 @@ input{
     color: white;
     text-align: center;
   }
+
 
 
   
