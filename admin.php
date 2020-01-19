@@ -46,7 +46,7 @@ echo $_SESSION['adminid'];
                 <th>Remarks</th>
             </tr>
             <?php
-            session_start();
+            //session_start();
             require_once 'php/db.php';
             $cid = $_SESSION['adminid'];
             echo $cid;
