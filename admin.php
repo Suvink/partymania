@@ -2,7 +2,7 @@
 <?php
     session_start();
     if(!isset($_SERVER['HTTP_REFERER'])){
-        header('Location: adminlogin.php?invalid');
+        header('Location: adminlogin.html?invalid');
     }
 ?>
 <html>
