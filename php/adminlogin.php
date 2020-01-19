@@ -1,8 +1,9 @@
 <?php
+include 'db.php';
 session_start();
 //Login
 if ( isset( $_POST['submit'] ) ){
-    include 'db.php';
+    
     $email = $_REQUEST['email'];
     $pw = $_REQUEST['pw'];
     echo $email;
