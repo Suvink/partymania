@@ -16,7 +16,7 @@
     }
     if ($con->query($sql) === TRUE) {
         echo("Done");
-        header('Location: ../dashboard.php?success');
+        header('Location: ../dashboard.php');
     } else {
         echo "Error: " . $sql . "<br>" . $con->error;
     }
