@@ -4,6 +4,9 @@
     if(!isset($_SERVER['HTTP_REFERER'])){
         header('Location: adminlogin.html?invalid');
     }
+    if(!isset($_SESSION['userid'])){
+        header('Location: adminlogin.html?invalid');
+    }
 ?>
 <html>
 <head>
