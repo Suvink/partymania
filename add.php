@@ -29,7 +29,7 @@
     </div>
 
     <div class="welcome">
-        <h3 style="display:inline-block;margin-top: 10px;">Welcome Dilhani</h3>
+        <h3 style="display:inline-block;margin-top: 10px;">Welcome</h3>
     </div>
 
     <section>
