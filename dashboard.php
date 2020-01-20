@@ -111,11 +111,7 @@ if(!isset($_SESSION['userid'])){
 
 
 
-            <h2>Job #132453</h2>
-            <div class="row">
-                <button onclick="request();">Update Order</button>
-                <button style="margin-left: 2rem;" onclick="request();">Cancel Order</button>
-            </div>
+           
         </center>
         <div class="row" style="margin-top: 5rem;">
             <center>
