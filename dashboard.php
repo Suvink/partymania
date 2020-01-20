@@ -84,7 +84,30 @@ if(!isset($_SESSION['userid'])){
                 if($result-> num_rows > 0){
                     while($row = $result-> fetch_assoc()){
                         //echo "<tr><td>".$row["customerid"]."</td><td>".$row["name"]."</td><td>".$row["date"]."</td><td>".$row["venue"]."</td><td>".$row["participants"]."</td><td>".$row["package"]."</td><td>".$row["remarks"]."</td></tr>";
-                        echo '<h2>Job #100'.$row['orderid'].'453</h2><div class="row"><button onclick="request();">Update Order</button><button style="margin-left: 2rem;" onclick="request();">Cancel Order</button></div>';
+                        echo '<h2>Job #100'.$row['orderid'].'</h2><div class="row"><button onclick="request();">Update Order</button><button style="margin-left: 2rem;" onclick="request();">Cancel Order</button></div>';
+                        echo '</center><div class="row" style="margin-top: 5rem;">
+                                <center>
+                                    <div class="row">
+                                        <h3>Track your order</h3>
+                                        <img src="img/loader.gif" width="100px">
+                                        <br>
+                                        <div class="timeline-item" style="background-color: #f56;">
+                                            <h4 style="color: white">'.$row['name'].'</h4>
+                                        </div>
+                                        <div class="timeline-item" style="background-color: #f56;">
+                                            <h4 style="color: white">'.$row['date'].'</h4>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <h4>'.$row['venue'].'</h4>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <h4>'.$row['participants'].'</h4>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <h4>'.$row['package'].'</h4>
+                                        </div>
+                                    </div>
+                                </center>';
                     }
                 }
                 else{
@@ -94,48 +117,6 @@ if(!isset($_SESSION['userid'])){
 
         ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           
-        </center>
-        <div class="row" style="margin-top: 5rem;">
-            <center>
-                <div class="row">
-                    <h3>Track your order</h3>
-                    <img src="img/loader.gif" width="100px">
-                    <br>
-                    <div class="timeline-item" style="background-color: #f56;">
-                        <h4 style="color: white">Order</h4>
-                    </div>
-                    <div class="timeline-item" style="background-color: #f56;">
-                        <h4 style="color: white">Payment</h4>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Event</h4>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Due Payment</h4>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Finish</h4>
-                    </div>
-                </div>
-            </center>
         </div>
     </section>
 
