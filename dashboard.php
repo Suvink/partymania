@@ -98,13 +98,13 @@ if(!isset($_SESSION['userid'])){
                                             <h4 style="color: white">Date<br>'.$row['date'].'</h4>
                                         </div>
                                         <div class="timeline-item" style="background-color: #f56;">
-                                            <h4>Venue<br>'.$row['venue'].'</h4>
+                                            <h4 style="color: white">Venue<br>'.$row['venue'].'</h4>
                                         </div>
                                         <div class="timeline-item" style="background-color: #f56;">
-                                            <h4>Participants<br>'.$row['participants'].'</h4>
+                                            <h4 style="color: white">Participants<br>'.$row['participants'].'</h4>
                                         </div>
                                         <div class="timeline-item" style="background-color: #f56;">
-                                            <h4>Package<br>'.$row['package'].'</h4>
+                                            <h4 style="color: white">Package<br>'.$row['package'].'</h4>
                                         </div>
                                     </div>
                                 </center>';
