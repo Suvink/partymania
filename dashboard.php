@@ -31,7 +31,9 @@ if(!isset($_SERVER['HTTP_REFERER'])){
         </div>
         <div class="icons">
             <i class="sm fa fa-user"></i>
-            <h5 style="display: inline-block;"><a href="" style="color:grey; text-decoration: none;" data-toggle="modal" data-target="#logoutModal">Logout</a></h5>
+            <form action="php/login.php" method="POST" style="display: inline-block;">
+                <button name="logout" style="display: inline-block;">Logout</button>
+            </form>
         </div>
         <hr>
     </div>
