@@ -92,19 +92,19 @@ if(!isset($_SESSION['userid'])){
                                         <img src="img/loader.gif" width="100px">
                                         <br>
                                         <div class="timeline-item" style="background-color: #f56;">
-                                            <h4 style="color: white">'.$row['name'].'</h4>
+                                            <h4 style="color: white">Name<br>'.$row['name'].'</h4>
                                         </div>
                                         <div class="timeline-item" style="background-color: #f56;">
-                                            <h4 style="color: white">'.$row['date'].'</h4>
+                                            <h4 style="color: white">Date<br>'.$row['date'].'</h4>
                                         </div>
-                                        <div class="timeline-item">
-                                            <h4>'.$row['venue'].'</h4>
+                                        <div class="timeline-item" style="background-color: #f56;>
+                                            <h4>Venue<br>'.$row['venue'].'</h4>
                                         </div>
-                                        <div class="timeline-item">
-                                            <h4>'.$row['participants'].'</h4>
+                                        <div class="timeline-item" style="background-color: #f56;>
+                                            <h4>Participants<br>'.$row['participants'].'</h4>
                                         </div>
-                                        <div class="timeline-item">
-                                            <h4>'.$row['package'].'</h4>
+                                        <div class="timeline-item" style="background-color: #f56;>
+                                            <h4>Package<br>'.$row['package'].'</h4>
                                         </div>
                                     </div>
                                 </center>';
