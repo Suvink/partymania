@@ -7,10 +7,10 @@ $pw = $_POST['pw'];
 
     $sql=  "INSERT INTO users (name, email, phone, password) 
             VALUES ('$name', '$email', '$phone', '$pw')";
-    if ($conn->query($sql) === TRUE) {
+    if ($con->query($sql) === TRUE) {
         echo("Done");
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" . $con->error;
     }
 
     $conn->close();
