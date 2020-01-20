@@ -31,7 +31,7 @@ if(!isset($_SERVER['HTTP_REFERER'])){
         </div>
         <div class="icons">
             <i class="sm fa fa-user"></i>
-            <h5 style="display: inline-block;"><a href="" style="color:grey; text-decoration: none;">Logout</a></h5>
+            <h5 style="display: inline-block;"><a href="" style="color:grey; text-decoration: none;" data-toggle="modal" data-target="#logoutModal">Logout</a></h5>
         </div>
         <hr>
     </div>
@@ -96,6 +96,18 @@ if(!isset($_SERVER['HTTP_REFERER'])){
             </center>
         </div>
     </section>
+
+    <!-- Logout Modal-->
+    <div class="modal" id="logoutModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <form action="php/login.php" method="POST">
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <button class="btn btn-primary" name="logout">Logout</button>
+                    </div>
+                </form>
+        </div>
+    </div>
 
     <script>
         function request(){
