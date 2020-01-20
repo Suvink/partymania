@@ -97,7 +97,7 @@ if(!isset($_SESSION['userid'])){
                                         <div class="timeline-item" style="background-color: #f56;">
                                             <h4 style="color: white">Date<br>'.$row['date'].'</h4>
                                         </div>
-                                        <div class="timeline-item" style="background-color: #f56;>
+                                        <div class="timeline-item">
                                             <h4>Venue<br>'.$row['venue'].'</h4>
                                         </div>
                                         <div class="timeline-item" style="background-color: #f56;>
