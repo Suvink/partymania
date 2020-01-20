@@ -133,7 +133,8 @@ input{
     align-content: center;
     justify-content: center;
     background-color: lightgray;
-    width: 150px;
+    width: 2000px;
+    height: 100px;
     margin: 10px;
     border-radius: 10px;
 
@@ -186,7 +187,7 @@ input{
   }
 
   .btn-logout{
-    
+
   }
 
 
