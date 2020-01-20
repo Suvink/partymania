@@ -27,5 +27,5 @@ if ( isset( $_POST['submit'] ) ){
 if ( isset( $_POST['logout'] ) ){
     echo "Logging Out";
     session_destroy();
-    header("Location: ../login.html");
+    header("Location: ../login.html",TRUE,302);
 }
