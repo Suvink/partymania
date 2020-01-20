@@ -52,19 +52,20 @@ if(!isset($_SESSION['userid'])){
             <div class="overall-card">
                 <h2 style="margin-bottom:0">Birthday package</h2>
                 <h4 style="margin-bottom:0;margin-top: 10px;">Birthday Cake</h4>
-                <h4 style="margin-bottom:0;margin-top: 10px;">party Props</h4>
-                <h4 style="margin-bottom:0;margin-top: 10px;">Invitations</h4>
+                <h4 style="margin-bottom:0;">party Props</h4>
+                <h4 style="margin-bottom:0;">Invitations</h4>
             </div>
             <div class="overall-card">
                 <h2 style="margin-bottom:0">Wedding package</h2>
                 <h4 style="margin-bottom:0;margin-top: 10px;">Wedding Cake</h4>
-                <h4 style="margin-bottom:0;margin-top: 10px;">Photography</h4>
-                <h4 style="margin-bottom:0;margin-top: 10px;">Decorations</h4>
+                <h4 style="margin-bottom:0;">Photography</h4>
+                <h4 style="margin-bottom:0;">Decorations</h4>
             </div>
             <div class="overall-card">
-                <h2 style="margin-bottom:0">Support</h2>
-                <h4 style="margin-bottom:0;margin-top: 10px;">No Tickets Open</h4>
-                <h6 style="margin-top:0">--</h6>
+                <h2 style="margin-bottom:0">Funeral package</h2>
+                <h4 style="margin-bottom:0;margin-top: 10px;">Coffin</h4>
+                <h4 style="margin-bottom:0;">Photography</h4>
+                <h4 style="margin-bottom:0;">Decorations</h4>
             </div>
         </div>
     </section>
