@@ -9,6 +9,7 @@ $pw = $_POST['pw'];
             VALUES ('$name', '$email', '$phone', '$pw')";
     if ($con->query($sql) === TRUE) {
         echo("Done");
+        header('Location: ../login.php');
     } else {
         echo "Error: " . $sql . "<br>" . $con->error;
     }
