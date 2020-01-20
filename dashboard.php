@@ -73,6 +73,44 @@ if(!isset($_SESSION['userid'])){
     <section class="timeline">
         <h1 style="color: #f56">Your Progress</h1>
         <center>
+
+        <?php
+            //session_start();
+            require_once 'php/db.php';
+            $cid = $_SESSION['userid'];
+            //echo $cid;
+            $sql = "SELECT * FROM orders";
+            $result = $con-> query($sql);
+                if($result-> num_rows > 0){
+                    while($row = $result-> fetch_assoc()){
+                        //echo "<tr><td>".$row["customerid"]."</td><td>".$row["name"]."</td><td>".$row["date"]."</td><td>".$row["venue"]."</td><td>".$row["participants"]."</td><td>".$row["package"]."</td><td>".$row["remarks"]."</td></tr>";
+                        echo '<h2>Job #100'.$row['orderid'].'453</h2><div class="row"><button onclick="request();">Update Order</button><button style="margin-left: 2rem;" onclick="request();">Cancel Order</button></div>';
+                    }
+                }
+                else{
+                    echo "Something went wrong!";
+                }
+            $con-> close();
+
+        ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <h2>Job #132453</h2>
             <div class="row">
                 <button onclick="request();">Update Order</button>
