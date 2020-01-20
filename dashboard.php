@@ -51,9 +51,9 @@ if(!isset($_SESSION['userid'])){
         <div class="row" style="text-align: center;">
             <div class="overall-card">
                 <h2 style="margin-bottom:0">Birthday package</h2>
-                <h4>Birthday Cake</h4>
-                <h4>party Props</h4>
-                <h4>Invitations</h4>
+                <h4 style="margin:0">Birthday Cake</h4>
+                <h4 style="margin:0">party Props</h4>
+                <h4 style="margin:0">Invitations</h4>
             </div>
             <div class="overall-card">
                 <h2 style="margin-bottom:0">Wedding package</h2>
@@ -65,7 +65,7 @@ if(!isset($_SESSION['userid'])){
                 <h2 style="margin-bottom:0">Funeral package</h2>
                 <h4 style="margin-bottom:0;margin-top: 10px;">Coffin</h4>
                 <h4 style="margin-bottom:0;">Photography</h4>
-                <h4 style="margin-bottom:0;">Decorations</h4>
+                <h4 style="margin-bottom:0;margin-top: 10px;">Decorations</h4>
             </div>
         </div>
     </section>
