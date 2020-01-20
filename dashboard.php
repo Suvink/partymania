@@ -87,7 +87,7 @@ if(!isset($_SESSION['userid'])){
                     while($row = $result-> fetch_assoc()){
                         //echo "<tr><td>".$row["customerid"]."</td><td>".$row["name"]."</td><td>".$row["date"]."</td><td>".$row["venue"]."</td><td>".$row["participants"]."</td><td>".$row["package"]."</td><td>".$row["remarks"]."</td></tr>";
                         echo '<h2>Job #100'.$row['orderid'].'</h2>
-                                <img src="https://format-com-cld-res.cloudinary.com/image/private/s--uwIgs6ri--/c_limit,g_center,h_422,w_338/fl_keep_iptc.progressive,q_95/v1/085b84b9b8bb1837fa07d4529ce2bba7/happy_gmail.gif">
+                                <img src="https://format-com-cld-res.cloudinary.com/image/private/s--uwIgs6ri--/c_limit,g_center,h_422,w_338/fl_keep_iptc.progressive,q_95/v1/085b84b9b8bb1837fa07d4529ce2bba7/happy_gmail.gif" style="height:200px">
                                 <div class="row">
                                     <button onclick="request();">Update Order</button>
                                     <button style="margin-left: 2rem;" onclick="request();">Cancel Order</button>
