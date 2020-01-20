@@ -62,7 +62,7 @@ if(!isset($_SESSION['userid'])){
                 <h4 style="margin:0">Decorations</h4>
             </div>
             <div class="overall-card">
-                <h2 style="margin:0">Funeral package</h2>
+                <h2 style="margin:10">Funeral package</h2>
                 <h4 style="margin:0">Coffin</h4>
                 <h4 style="margin:0">Photography</h4>
                 <h4 style="margin:0">Decorations</h4>
