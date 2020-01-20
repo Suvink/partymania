@@ -4,8 +4,9 @@ session_start();
 if(!isset($_SERVER['HTTP_REFERER'])){
     header('Location: login.html?invalid');
 }
-if(!isset($_SESSION['userid'])) : 
+if(!isset($_SESSION['userid'])){
     header('Location: login.html?invalid');
+}
 ?>
 <html>
 <head>
