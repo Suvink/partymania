@@ -96,7 +96,6 @@ if(!isset($_SESSION['userid'])){
                                 <center>
                                     <div class="row">
                                         <h3>Your Order Details</h3>
-                                        <img src="img/loader.gif" width="100px">
                                         <br>
                                         <div class="timeline-item" style="background-color: #f56;">
                                             <h4 style="color: white">Name<br>'.$row['name'].'</h4>
