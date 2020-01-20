@@ -42,22 +42,24 @@ if(!isset($_SESSION['userid'])){
     </div>
 
     <div class="welcome">
-        <h3 style="display:inline-block;margin-top: 10px;">Welcome Dilhani</h3>
+        <h3 style="display:inline-block;margin-top: 10px;">Welcome to your Dashboard</h3>
         <button style="display:inline-block; float: right;"><i class="fa fa-plus"></i>&nbsp;<a href="add.php" style="color: #f56a6a !important; text-decoration: none !important">Add New Event</a></button>
     </div>
 
     <section class="overall">
-        <h1 style="color: #f56">Overview</h1>
+        <h1 style="color: #f56">Package Details</h1>
         <div class="row" style="text-align: center;">
             <div class="overall-card">
-                <h2 style="margin-bottom:0">Your Jobs</h2>
-                <h4 style="margin-bottom:0;margin-top: 10px;">#132453</h4>
-                <h6 style="margin-top:0">Ongoing</h6>
+                <h2 style="margin-bottom:0">Birthday package</h2>
+                <h4 style="margin-bottom:0;margin-top: 10px;">Birthday Cake</h4>
+                <h4 style="margin-bottom:0;margin-top: 10px;">party Props</h4>
+                <h4 style="margin-bottom:0;margin-top: 10px;">Invitations</h4>
             </div>
             <div class="overall-card">
-                <h2 style="margin-bottom:0">Payments</h2>
-                <h4 style="margin-bottom:0;margin-top: 10px;">35,000</h4>
-                <h6 style="margin-top:0">To be paid</h6>
+                <h2 style="margin-bottom:0">Wedding package</h2>
+                <h4 style="margin-bottom:0;margin-top: 10px;">Wedding Cake</h4>
+                <h4 style="margin-bottom:0;margin-top: 10px;">Photography</h4>
+                <h4 style="margin-bottom:0;margin-top: 10px;">Decorations</h4>
             </div>
             <div class="overall-card">
                 <h2 style="margin-bottom:0">Support</h2>
