@@ -54,21 +54,21 @@ if(!isset($_SESSION['userid'])){
                 <h4 style="margin:0">Birthday Cake</h4>
                 <h4 style="margin:0">party Props</h4>
                 <h4 style="margin:0">Invitations</h4>
-                <h2 style="margin-bottom:10px;margin-top: 20px color:#f56;">LKR 50,000.00</h2>
+                <h2 style="margin-bottom:10px;margin-top: 20px; color:#f56;">LKR 50,000.00</h2>
             </div>
             <div class="overall-card">
                 <h2 style="margin-bottom:10px">Wedding package</h2>
                 <h4 style="margin:0">Wedding Cake</h4>
                 <h4 style="margin:0">Photography</h4>
                 <h4 style="margin:0">Decorations</h4>
-                <h2 style="margin-bottom:10px;margin-top: 20px color:#f56;">LKR 200,000.00</h2>
+                <h2 style="margin-bottom:10px;margin-top: 20px; color:#f56;">LKR 200,000.00</h2>
             </div>
             <div class="overall-card">
                 <h2 style="margin-bottom:10px">Funeral package</h2>
                 <h4 style="margin:0">Coffin</h4>
                 <h4 style="margin:0">Photography</h4>
                 <h4 style="margin:0">Decorations</h4>
-                <h2 style="margin-bottom:10px;margin-top: 20px color:#f56;">LKR 75,000.00</h2>
+                <h2 style="margin-bottom:10px;margin-top: 20px; color:#f56;">LKR 75,000.00</h2>
             </div>
         </div>
     </section>
