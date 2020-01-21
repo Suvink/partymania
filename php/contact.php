@@ -51,6 +51,9 @@ function sendEmail($customerEmail,$customerName,$email_string){
 //Send Confirmation Email
 sendEmail($adminemail,$name,$email_string);
 
+//Redirection
+header('Location: ../contact.php?success');
+
 
 
 
