@@ -40,7 +40,8 @@
                 <button style="display:inline-block; float: right; margin-left: 2rem;" type="submit" name="submit"><i class="fa fa-download"></i>&nbsp;Download Report</button>
             </form>
             <form style="display: inline-block"> 
-                <button style="display:inline-block; float: right; margin-left: 2rem;"><i class="fa fa-plus"></i>&nbsp;Add New Event</button>
+                <button style="display:inline-block; float: right; margin-left: 2rem;"><i class="fa fa-plus"></i>
+                &nbsp;<a href="add.php" style="text-decoration: none; color: #f56">Add New Event</a></button>
             </form>
         </div>
     </div>
