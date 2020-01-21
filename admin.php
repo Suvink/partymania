@@ -70,8 +70,9 @@
             $result = $con-> query($sql);
                 if($result-> num_rows > 0){
                     while($row = $result-> fetch_assoc()){
-                        echo '<tr><td>".$row["customerid"]."</td><td>".$row["name"]."</td><td>".$row["date"]."</td><td>".$row["venue"]."</td><td>".$row["participants"]."</td><td>".$row["package"]."</td><td>".$row["remarks"]."</td>
-                        </tr>';
+                        echo "<tr><td>".$row["customerid"]."</td><td>".$row["name"]."</td><td>".$row["date"]."</td><td>".$row["venue"]."</td><td>".$row["participants"]."</td><td>".$row["package"]."</td><td>".$row["remarks"]."</td>";
+                        echo '<td><form><button type="submit" name="submit" value="submit" style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Update</button></form></td>
+                                <td><form><button type="submit" name="submit" value="submit" style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Delete</button></form></td></tr>';
                     }
                 }
                 else{
