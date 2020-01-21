@@ -81,7 +81,7 @@ if(!isset($_SESSION['userid'])){
             require_once 'php/db.php';
             $cid = $_SESSION['userid'];
             //echo $cid;
-            $sql = "SELECT * FROM orders";
+            $sql = "SELECT * FROM orders WHERE customerid=$cid";
             $result = $con-> query($sql);
                 if($result-> num_rows > 0){
                     while($row = $result-> fetch_assoc()){
