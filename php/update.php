@@ -1,9 +1,9 @@
 <?php
-    //if(isset($_REQUEST['update'])){
+    if(isset($_POST['update'])){
         require_once 'db.php';
-        $sql=  "UPDATE orders SET name=".$REQUEST['name'].", date=".$REQUEST['date'].", 
-                venue=".$REQUEST['venue'].", participants=".$REQUEST['participants'].", package=".$REQUEST['package'].", 
-                remarks=".$REQUEST['remarks']."WHERE customerid=".$REQUEST['id'];
+        $sql=  "UPDATE orders SET name=".$POST['name'].", date=".$POST['date'].", 
+                venue=".$POST['venue'].", participants=".$POST['participants'].", package=".$POST['package'].", 
+                remarks=".$POST['remarks']."WHERE customerid=".$POST['id'];
 
         if ($con->query($sql) === TRUE) {
             echo("Done");
@@ -11,7 +11,7 @@
             echo "Error: " . $sql . "<br>" . $con->error;
         }
         //header('Refresh:0');
-    //}
+    }
 
 
 ?>

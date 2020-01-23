@@ -1,6 +1,6 @@
 <?php
     require_once 'db.php';
-    require_once 'email/mailtemp.php';
+    //require_once 'email/mailtemp.php';
     session_start();
     $customer_id = $_SESSION['userid'];
 
