@@ -142,7 +142,7 @@
                                 <td><input class="adminInput" type="text" name="venue" value="'.$row["venue"].'"></td>
                                 <td><input class="adminInput" type="number" name="participants" value="'.$row["participants"].'"></td>
                                 <td><input class="adminInput" type="text" name="package" value="'.$row["package"].'"></td>
-                                <td><input class="adminInput" type="text" name="Remarks" value="'.$row["remarks"].'"></td>
+                                <td><input class="adminInput" type="text" name="remarks" value="'.$row["remarks"].'"></td>
                                 <td>
                                     <button type="submit" name="update" value="update"
                                             style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Update</button>
