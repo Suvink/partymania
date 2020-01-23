@@ -65,7 +65,6 @@
             </tr>
 
             <?php
-            /*
             //session_start();
             require_once 'php/db.php';
             $cid = $_SESSION['adminid'];
@@ -91,7 +90,6 @@
                     echo "No results";
                 }
            // $con-> close();
-           */
             ?>
         </table>
         </center>
