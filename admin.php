@@ -88,10 +88,10 @@
                 else{
                     echo "No results";
                 }
-            $con-> close();
+           // $con-> close();
             ?>
 
-<?php
+            <?php
             //session_start();
             require_once 'php/db.php';
             $cid = $_SESSION['adminid'];
