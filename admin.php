@@ -108,7 +108,6 @@
                 </tr>
             
             <?php
-            /*
             //session_start();
             require_once 'php/db.php';
             //echo $cid;
@@ -144,7 +143,7 @@
                     echo "No results";
                 }
             $con-> close();
-            */
+            
             ?>
             
         </table>

@@ -192,9 +192,7 @@ input{
     transition: all 0.3s;
   }
 
-  .adminInput{
-    
-  }
+
   .adminInput :focus{
     border: solid 3px #f56;
     background-color: grey;
