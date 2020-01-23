@@ -83,9 +83,24 @@
                             <td>'.$row["package"].'</td>
                             <td>'.$row["remarks"].'</td>
                         </tr></table>';
+                    }
+                }
+                else{
+                    echo "No results";
+                }
+            $con-> close();
+            ?>
 
+<?php
+            //session_start();
+            require_once 'php/db.php';
+            $cid = $_SESSION['adminid'];
+            //echo $cid;
+            $sql = "SELECT * FROM orders";
+            $result = $con-> query($sql);
+                if($result-> num_rows > 0){
+                    while($row = $result-> fetch_assoc()){
                         //Edit Table
-                        /*
                         echo '
                         <table id="customerDataEdit" style="display:none">
                             <tr>
@@ -119,14 +134,13 @@
                                 </form>
                             </td>
                         </tr></table>';
-                        */
+                        
                     }
                 }
                 else{
                     echo "No results";
                 }
             $con-> close();
-
             ?>
         
     </section>
