@@ -159,7 +159,7 @@
         }
         function switchTable(){
             document.getElementById("customerData").style.display = "none";
-            document.getElementById("customerDataEdit").style.display = "block";
+            document.getElementById("customerDataEdit").style.display = "table";
         }
     </script>
 </body>
