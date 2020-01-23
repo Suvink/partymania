@@ -8,6 +8,38 @@
     //     header('Location: adminlogin.html?invalid');
     // }
 ?>
+
+<?php
+    if(isset($_POST['update'])){
+        require_once 'db.php';
+        $sql=  "UPDATE orders SET customerid=".$POST['id'].", name=".$POST['name'].", date=".$POST['date'].", 
+                venue=".$POST['venue'].", participants=".$POST['participants'].", package=".$POST['package'].", remarks=".$POST['remarks'].") ";
+
+        if ($con->query($sql) === TRUE) {
+            echo("Done");
+        } else {
+            echo "Error: " . $sql . "<br>" . $con->error;
+        }
+        header('Refresh:0');
+    }
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -126,7 +158,7 @@
                             <td><input class="adminInput" type="text" name="package" value="'.$row["package"].'"></td>
                             <td><input class="adminInput" type="text" name="Remarks" value="'.$row["remarks"].'"></td>
                             <td>
-                                <form><button type="submit" name="submit" value="submit"
+                                <form><button type="submit" name="submit" value="update"
                                         style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Update</button>
                                 </form>
                             </td>
