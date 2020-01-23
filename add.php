@@ -43,6 +43,7 @@
                     <input type="date" name="cdate" placeholder="Date of the event" width="500px" style="width: 70%;" required>
                     <input type="text" name="cvenue" placeholder="Address of the Venue" width="500px" style="width: 70%;" required>
                     <input type="number" name="cparticipants" placeholder="Expected no.of participants" width="500px" style="width: 70%;" required>
+                    <input type="text" name="cnumber" placeholder="Contact Number" width="500px" style="width: 70%;" required>
 
                     <h1>Package Details</h1>
                     <div class="row">

@@ -65,6 +65,7 @@ hr {
   color: rgb(127, 136, 143);
   margin-right: 17px;
 }
+
 .func {
   display: inline-block;
   font-size: 80px !important;
@@ -152,6 +153,11 @@ input{
   /* ADMIN PAGE */
   #customerData {
     border-collapse: collapse;
+    width: 100%;
+  }
+
+  #customerData input{
+    border: none;
     width: 100%;
   }
 

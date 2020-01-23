@@ -1,27 +1,70 @@
 <html>
-    <head>
-        <style>
-            body {
-                font-family: "Roboto Slab", serif;
-                padding-left: 4rem;
-                padding-right: 4rem;
-                }
-        </style>
-         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <center>
-                <img src="https://thumbs.gfycat.com/CelebratedAlienatedChinesecrocodilelizard-size_restricted.gif" height="300px">
-                <h1>Someone Just Submitted Your Site Contact Form!</h1>
-                <h3>Here's what they had to say!</h3>
-                <p>..............................................................................</p>
-                <h4>Name: kjsbkjsbksj</h4>
-                <br>
-                <h4>Email: knknklnflekfnelfkne</h4>
-                <br>
-                <h4>Message: knklefnlekfnlkfnwelfnwelfn</h4>
-            </center>
-        </div>
-    </body>
+
+<head>
+    <style>
+        body {
+            font-family: "Roboto Slab", serif;
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <img src="https://thumbs.gfycat.com/CelebratedAlienatedChinesecrocodilelizard-size_restricted.gif"
+                height="300px">
+            <h1>Someone Just Submitted Your Site Contact Form!</h1>
+            <h3>Here's what they had to say!</h3>
+            <p>..............................................................................</p>
+            <h4>Name: kjsbkjsbksj</h4>
+            <br>
+            <h4>Email: knknklnflekfnelfkne</h4>
+            <br>
+            <h4>Message: knklefnlekfnlkfnwelfnwelfn</h4>
+        </center>
+
+        <center>
+            <table id="customerData">
+                <tr>
+                    <th>Customer Id</th>
+                    <th>Customer Name</th>
+                    <th>Event Date</th>
+                    <th>Event Venue</th>
+                    <th>Participants</th>
+                    <th>Package</th>
+                    <th>Remarks</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                <form action="./editUpdate.php" method="POST">
+                    <input type="text" name="" value="" style="display:none">
+                    <tr>
+                        <td><input type="text" name="" value=""></td>
+                        <td>sjvsjknvj</td>
+                        <td>sdvsv</td>
+                        <td>scsc</td>
+                        <td>cascas</td>
+                        <td>csscs</td>
+                        <td>cscscsv</td>
+                        <td>
+                            <form><button type="submit" name="submit" value="update"
+                                    style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Update</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form><button type="submit" name="submit" value="delete"
+                                    style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </center>
+    </div>
+</body>
+
 </html>
