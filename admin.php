@@ -103,18 +103,17 @@
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
-
+            
             <?php
+            /*
             //session_start();
             require_once 'php/db.php';
-            $cid = $_SESSION['adminid'];
             //echo $cid;
             $sql2 = "SELECT * FROM orders";
             $result2 = $con-> query($sql2);
                 if($result2-> num_rows > 0){
                     while($row = $result2-> fetch_assoc()){
                         //Edit Table
-                        echo $row["customerid"];
                         echo '
                         <tr>
                             <td><input class="adminInput" type="text" name="id" value="'.$row["customerid"].'" disabled></td>
@@ -142,7 +141,9 @@
                     echo "No results";
                 }
             $con-> close();
+            */
             ?>
+            
             </table>
         
     </section>
