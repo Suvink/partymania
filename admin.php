@@ -133,7 +133,7 @@
                                         style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Delete</button>
                                 </form>
                             </td>
-                        </tr></table>';
+                        </tr>';
                         
                     }
                 }
@@ -142,6 +142,7 @@
                 }
             $con-> close();
             ?>
+            </table>
         
     </section>
 
