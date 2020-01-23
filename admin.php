@@ -72,8 +72,6 @@
                                 <th>Participants</th>
                                 <th>Package</th>
                                 <th>Remarks</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
                             </tr>';
                         echo '
                         <tr>
