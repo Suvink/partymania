@@ -81,7 +81,7 @@
     <section class="overall">
         <h1 style="color: #f56">Ongoing Orders</h1>
         <center>
-            <button id="btn-edit" onclick="switchTable();" style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Update
+            <button id="btn-edit" onclick="switchTable();" style="background-color: #f56; color: white !important; border: none;box-shadow: none; margin-bottom:2rem">Update
             </button>
         </center>
         <center>
