@@ -182,7 +182,7 @@
                 else{
                     echo "No results";
                 }
-            $con-> close();
+            //$con-> close();
             
             ?>
             
