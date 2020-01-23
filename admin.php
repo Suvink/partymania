@@ -114,6 +114,7 @@
                 if($result2-> num_rows > 0){
                     while($row = $result2-> fetch_assoc()){
                         //Edit Table
+                        echo $row["customerid"];
                         echo '
                         <tr>
                             <td><input class="adminInput" type="text" name="id" value="'.$row["customerid"].'" disabled></td>
