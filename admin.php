@@ -135,23 +135,24 @@
                         //Edit Table
                         echo '
                         <tr>
-                            <td><input class="adminInput" type="text" name="id" value="'.$row["customerid"].'" disabled></td>
-                            <td><input class="adminInput" type="text" name="name" value="'.$row["name"].'"></td>
-                            <td><input class="adminInput" type="date" name="date" value="'.$row["date"].'"></td>
-                            <td><input class="adminInput" type="text" name="venue" value="'.$row["venue"].'"></td>
-                            <td><input class="adminInput" type="number" name="participants" value="'.$row["participants"].'"></td>
-                            <td><input class="adminInput" type="text" name="package" value="'.$row["package"].'"></td>
-                            <td><input class="adminInput" type="text" name="Remarks" value="'.$row["remarks"].'"></td>
-                            <td>
-                                <form action="php/update.php" method="POST"><button type="submit" name="update" value="update"
-                                        style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Update</button>
-                                </form>
-                            </td>
-                            <td>
-                                <form action="admin.php" method="POST"><button type="submit" name="submit" value="submit"
-                                        style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Delete</button>
-                                </form>
-                            </td>
+                            <form action="php/update.php" method="POST">
+                                <td><input class="adminInput" type="text" name="id" value="'.$row["customerid"].'" disabled></td>
+                                <td><input class="adminInput" type="text" name="name" value="'.$row["name"].'"></td>
+                                <td><input class="adminInput" type="date" name="date" value="'.$row["date"].'"></td>
+                                <td><input class="adminInput" type="text" name="venue" value="'.$row["venue"].'"></td>
+                                <td><input class="adminInput" type="number" name="participants" value="'.$row["participants"].'"></td>
+                                <td><input class="adminInput" type="text" name="package" value="'.$row["package"].'"></td>
+                                <td><input class="adminInput" type="text" name="Remarks" value="'.$row["remarks"].'"></td>
+                                <td>
+                                    <button type="submit" name="update" value="update"
+                                            style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Update</button>
+                                    
+                                </td>
+                                <td>
+                                    <button type="submit" name="delete" value="delete"
+                                            style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Delete</button>
+                                </td>
+                            </form>
                         </tr>';
                         
                     }
