@@ -1,5 +1,6 @@
 <?php
     if(isset($_POST['update'])){
+        echo $POST['name'];
         require_once 'db.php';
         $sql=  "UPDATE orders SET name=".$POST['name'].", date=".$POST['date'].", 
                 venue=".$POST['venue'].", participants=".$POST['participants'].", package=".$POST['package'].", 
