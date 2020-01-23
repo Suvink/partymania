@@ -82,7 +82,7 @@
                             <td>'.$row["participants"].'</td>
                             <td>'.$row["package"].'</td>
                             <td>'.$row["remarks"].'</td>
-                        </tr></table>';
+                        </tr>';
                     }
                 }
                 else{
@@ -90,6 +90,7 @@
                 }
            // $con-> close();
             ?>
+            </table>
             <table id="customerDataEdit" style="display:none">
                 <tr>
                     <th>Customer Id</th>
