@@ -53,7 +53,7 @@
             </button>
         </center>
         <center>
-        <table id="customerData" style="display:block">
+        <table id="customerData" style="display:table">
             <tr>
                 <th>Customer Id</th>
                 <th>Customer Name</th>
@@ -159,7 +159,7 @@
         }
         function switchTable(){
             document.getElementById("customerData").style.display = "none";
-            document.getElementById("customerDataEdit").style.display = "table";
+            document.getElementById("customerDataEdit").style.display = "block";
         }
     </script>
 </body>
