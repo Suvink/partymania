@@ -159,12 +159,12 @@
                             <td><input class="adminInput" type="text" name="package" value="'.$row["package"].'"></td>
                             <td><input class="adminInput" type="text" name="Remarks" value="'.$row["remarks"].'"></td>
                             <td>
-                                <form><button type="submit" name="submit" value="update"
+                                <form action="admin.php" method="POST"><button type="submit" name="submit" value="update"
                                         style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Update</button>
                                 </form>
                             </td>
                             <td>
-                                <form><button type="submit" name="submit" value="submit"
+                                <form action="admin.php" method="POST"><button type="submit" name="submit" value="submit"
                                         style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Delete</button>
                                 </form>
                             </td>
