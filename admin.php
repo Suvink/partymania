@@ -109,10 +109,10 @@
             require_once 'php/db.php';
             $cid = $_SESSION['adminid'];
             //echo $cid;
-            $sql = "SELECT * FROM orders";
-            $result = $con-> query($sql);
-                if($result-> num_rows > 0){
-                    while($row = $result-> fetch_assoc()){
+            $sql2 = "SELECT * FROM orders";
+            $result2 = $con-> query($sql2);
+                if($result2-> num_rows > 0){
+                    while($row = $result2-> fetch_assoc()){
                         //Edit Table
                         echo '
                         <tr>
