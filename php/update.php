@@ -1,7 +1,7 @@
 <?php
     if(isset($_POST['update'])){
-        echo $_POST['cid'];
-        echo $_POST['name'];
+        echo $_REQUEST['cid'];
+        echo $_REQUEST['name'];
         echo "hii";
         require_once 'db.php';
         $sql=  "UPDATE orders SET name='".$_POST['name']."', date='".$_POST['date']."', 
