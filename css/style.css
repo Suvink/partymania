@@ -158,7 +158,7 @@ input{
 
   #customerData input{
     border: none;
-    width: 80%;
+    width: 100%;
   }
 
   #customerData td, #customerData th {
