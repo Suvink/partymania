@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['update'])){
+    //if(isset($_POST['update'])){
         require_once 'db.php';
         $sql=  "UPDATE orders SET name=".$POST['name'].", date=".$POST['date'].", 
                 venue=".$POST['venue'].", participants=".$POST['participants'].", package=".$POST['package'].", 
@@ -11,7 +11,7 @@
             echo "Error: " . $sql . "<br>" . $con->error;
         }
         //header('Refresh:0');
-    }
+    //}
 
 
 ?>
