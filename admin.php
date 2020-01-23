@@ -85,6 +85,7 @@
                         </tr></table>';
 
                         //Edit Table
+                        /*
                         echo '
                         <table id="customerDataEdit" style="display:none">
                             <tr>
@@ -118,6 +119,7 @@
                                 </form>
                             </td>
                         </tr></table>';
+                        */
                     }
                 }
                 else{
