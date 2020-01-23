@@ -48,19 +48,10 @@
 
     <section class="overall">
         <h1 style="color: #f56">Ongoing Orders</h1>
-        
-        <table id="customerData">
-            <tr>
-                <th>Customer Id</th>
-                <th>Customer Name</th>
-                <th>Event Date</th>
-                <th>Event Venue</th>
-                <th>Participants</th>
-                <th>Package</th>
-                <th>Remarks</th>
-                <th>Edit</th>
-                <th>Delete</th>
-            </tr>
+        <center>
+            <button id="btn-edit" onclick="switchTable();" style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Update
+            </button>
+        </center>
             <?php
             //session_start();
             require_once 'php/db.php';
@@ -70,6 +61,45 @@
             $result = $con-> query($sql);
                 if($result-> num_rows > 0){
                     while($row = $result-> fetch_assoc()){
+                        //Display Table
+                        echo '
+                        <table id="customerData" style="display:block">
+                            <tr>
+                                <th>Customer Id</th>
+                                <th>Customer Name</th>
+                                <th>Event Date</th>
+                                <th>Event Venue</th>
+                                <th>Participants</th>
+                                <th>Package</th>
+                                <th>Remarks</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>';
+                        echo '
+                        <tr>
+                            <td>'.$row["customerid"].'</td>
+                            <td>'.$row["name"].'</td>
+                            <td>'.$row["date"].'</td>
+                            <td>'.$row["venue"].'</td>
+                            <td>'.$row["participants"].'</td>
+                            <td>'.$row["package"].'</td>
+                            <td>'.$row["remarks"].'</td>
+                        </tr></table>';
+
+                        //Edit Table
+                        echo '
+                        <table id="customerDataEdit" style="display:none">
+                            <tr>
+                                <th>Customer Id</th>
+                                <th>Customer Name</th>
+                                <th>Event Date</th>
+                                <th>Event Venue</th>
+                                <th>Participants</th>
+                                <th>Package</th>
+                                <th>Remarks</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>';
                         echo '
                         <tr>
                             <td><input class="adminInput" type="text" name="id" value="'.$row["customerid"].'" disabled></td>
@@ -89,16 +119,7 @@
                                         style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Delete</button>
                                 </form>
                             </td>
-                        </tr>';
-
-
-
-
-
-
-
-
-
+                        </tr></table>';
                     }
                 }
                 else{
@@ -107,7 +128,7 @@
             $con-> close();
 
             ?>
-        </table>
+        
     </section>
 
     
@@ -115,6 +136,10 @@
     <script>
         function request(){
             alert("Your request has been sent!");
+        }
+        function switchTable(){
+            document.getElementById("customerData").style.display = "none";
+            document.getElementById("customerDataEdit").style.display = "block";
         }
     </script>
 </body>
