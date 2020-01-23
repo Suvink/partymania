@@ -136,7 +136,7 @@
                         echo '
                         <tr>
                             <form action="php/update.php" method="POST">
-                                <td><input class="adminInput" type="text" name="id" value="'.$row["customerid"].'" disabled></td>
+                                <td><input class="adminInput" type="text" name="cid" value="'.$row["customerid"].'" disabled></td>
                                 <td><input class="adminInput" type="text" name="name" value="'.$row["name"].'"></td>
                                 <td><input class="adminInput" type="date" name="date" value="'.$row["date"].'"></td>
                                 <td><input class="adminInput" type="text" name="venue" value="'.$row["venue"].'"></td>
