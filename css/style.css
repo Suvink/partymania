@@ -151,7 +151,7 @@ input{
   }
   
   /* ADMIN PAGE */
-  #customerData {
+  #customerData{
     border-collapse: collapse;
     width: 100%;
   }
@@ -177,6 +177,36 @@ input{
     color: white;
     text-align: center;
   }
+
+
+  /*Second table*/
+  #customerDataEdit{
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #customerDataEdit input{
+    border: none;
+    width: 100%;
+  }
+
+  #customerDataEdit td, #customerDataEdit th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  #customerDataEdit tr:nth-child(even){background-color: #f2f2f2;}
+
+  #customerDataEdit th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #F56;
+    color: white;
+    text-align: center;
+  }
+
 
   .modal{
     position: fixed;
