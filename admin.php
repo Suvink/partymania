@@ -52,6 +52,7 @@
             <button id="btn-edit" onclick="switchTable();" style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Update
             </button>
         </center>
+        <center>
         <table id="customerData" style="display:block">
             <tr>
                 <th>Customer Id</th>
@@ -90,7 +91,9 @@
                 }
            // $con-> close();
             ?>
-            </table>
+        </table>
+        </center>
+        <center>
             <table id="customerDataEdit" style="display:none">
                 <tr>
                     <th>Customer Id</th>
@@ -144,7 +147,8 @@
             */
             ?>
             
-            </table>
+        </table>
+        </center>
         
     </section>
 
