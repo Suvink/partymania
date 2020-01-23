@@ -1,6 +1,6 @@
 <?php
     if(isset($_POST['update'])){
-        echo $_REQUEST['cid'];
+        echo $_REQUEST['customer_id'];
         echo $_REQUEST['name'];
         echo $_REQUEST['date'];
         echo $_REQUEST['venue'];
