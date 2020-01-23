@@ -18,8 +18,6 @@
         } else {
             echo "Error: " . $sql . "<br>" . $con->error;
         }
-        //header('Refresh:0');
+        header('Location: ../admin.php');
     }
-
-
 ?>
