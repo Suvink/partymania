@@ -52,20 +52,26 @@
                             <h4 style="color: black;margin: 0;">Birthday Cake</h4>
                             <h4 style="color: black;margin: 0;">Invitations</h4>
                             <h4 style="color: black;margin: 0;">Party Props</h4>
-                        </div>
+                            <h4 style="color: black;margin: 0;">Food and Drink</h4>
+                            <h4 style="color: black;margin: 0;">Music</h4>
+                           </div>
                         <div class="column">
-                            <h3>Farewell Package</h3>
+                            <h3>Anniversary Package</h3>
                             <ol>
                                 <h4 style="color: black;margin: 0;">Anniversary Cake</h4>
                                 <h4 style="color: black;margin: 0;">Invitations</h4>
                                 <h4 style="color: black;margin: 0;">Roses</h4>
+                                <h4 style="color: black;margin: 0;">Venue</h4>
+                                <h4 style="color: black;margin: 0;">Food and Drink</h4>
+                                
                             </ol>
                         </div>
+                        
                     </div>
 
                     <input type="radio"name="cpackage" value="Birthday Package" style="width: 30px;">Birthday Package
                     <br>
-                    <input type="radio"name="cpackage" value="bday" style="width: 30px;">Farewell Package
+                    <input type="radio"name="cpackage" value="bday" style="width: 30px;">Anniversary Package
 
                     <h1>Additional Details</h1>
                     <input type="text" name="cadditional" placeholder="Additional Notes" width="500px" style="width: 70%;height: 30%;" required>
