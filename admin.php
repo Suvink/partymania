@@ -38,8 +38,11 @@
         <div class="welcome">
             <h3 style="display:inline-block;margin-top: 10px;">Welcome!</h3>
             <div style="float:right">
-                <form action="php/export.php" method="POST" style="display: inline-block">
+                <form action="" method="POST" style="display: inline-block">
                     <button style="display:inline-block; float: right; margin-left: 2rem;" type="submit" name="submit"><i class="fa fa-download"></i>&nbsp;Download Report</button>
+                </form>
+                <form action="php/export.php" method="POST" style="display: inline-block">
+                    <button style="display:inline-block; float: right; margin-left: 2rem;" type="submit" name="submit"><i class="fa fa-download"></i>&nbsp;Download Raw Data</button>
                 </form>
                 <form style="display: inline-block"> 
                     <button style="display:inline-block; float: right; margin-left: 2rem;"><i class="fa fa-plus"></i>
