@@ -167,6 +167,7 @@
             use \koolreport\widgets\google\ColumnChart;
             use \koolreport\widgets\google\BarChart;
             use \koolreport\widgets\google\PieChart;
+            use \koolreport\widgets\google\LineChart;
 
 
             $connection = array(
@@ -188,10 +189,10 @@
 
             echo '  
                 <div class="row">
-                    <div class="column">';
+                    <div class="column">
+                    <h1 style="color: #f56">Packages</h1>';
 
             PieChart::create(array(
-                "title"=>"Types",
                 "dataSource"=>(new PdoDataSource($connection))->query("
                     SELECT package,COUNT(package) as Count
                     FROM orders
@@ -204,6 +205,17 @@
             echo'
                     </div>
                     <div class="column">
+                    <h1 style="color: #f56">Packages</h1>';
+
+            LineChart::create(array(
+                "dataSource"=>(new PdoDataSource($connection))->query("
+                    SELECT date, orderid
+                    FROM orders
+                    GROUP BY date
+                ")
+            ));
+
+            echo '
                     </div>
                 </div>
             
