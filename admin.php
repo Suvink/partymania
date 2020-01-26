@@ -191,6 +191,7 @@
                 "dataSource"=>(new PdoDataSource($connection))->query("
                     SELECT date, orderid
                     FROM orders
+                    GROUP BY date
                 "),
                 "withoutLoader"=>true
             ));
