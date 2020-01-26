@@ -22,6 +22,10 @@ p {
   float: left;
   width: 50%;
 }
+.column-3 {
+  float: left;
+  width: 33%;
+}
 
 .row:after {
   content: '';

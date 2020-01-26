@@ -47,7 +47,7 @@
 
                     <h1>Package Details</h1>
                     <div class="row">
-                        <div class="column">
+                        <div class="column-3">
                             <h3 style="color:#f56">Birthday Package</h3>
                             <h4 style="color: black;margin: 0;">Birthday Cake</h4>
                             <h4 style="color: black;margin: 0;">Invitations</h4>
@@ -55,16 +55,21 @@
                             <h4 style="color: black;margin: 0;">Food and Drink</h4>
                             <h4 style="color: black;margin: 0;">Music</h4>
                            </div>
-                        <div class="column">
+                        <div class="column-3">
                             <h3 style="color:#f56">Anniversary Package</h3>
-                            <ol>
                                 <h4 style="color: black;margin: 0;">Anniversary Cake</h4>
                                 <h4 style="color: black;margin: 0;">Invitations</h4>
                                 <h4 style="color: black;margin: 0;">Roses</h4>
                                 <h4 style="color: black;margin: 0;">Venue</h4>
                                 <h4 style="color: black;margin: 0;">Food and Drink</h4>
-                                
-                            </ol>
+                        </div>
+                        <div class="column-3">
+                            <h3 style="color:#f56">Wedding Package</h3>
+                                <h4 style="color: black;margin: 0;">Wedding Cake</h4>
+                                <h4 style="color: black;margin: 0;">Flower Arrangements</h4>
+                                <h4 style="color: black;margin: 0;"> Decorations</h4>
+                                <h4 style="color: black;margin: 0;">Venue including food</h4>
+                                <h4 style="color: black;margin: 0;">Music and DJ</h4>
                         </div>
                         
                     </div>
