@@ -246,7 +246,7 @@
             }
         };
 
-        $('#btn-pdf').click(function () {
+        document.getElementById('btn-pdf').click(function () {
             doc.fromHTML(document.getElementById('pdf-wrapper').html(), 15, 15, {
                 'width': 170,
                     'elementHandlers': specialElementHandlers
