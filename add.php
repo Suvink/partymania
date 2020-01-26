@@ -46,7 +46,7 @@
                     <input type="text" name="cnumber" placeholder="Contact Number" width="500px" style="width: 70%;" required>
 
                     <h1>Package Details</h1>
-                    <div class="row">
+                    <div class="row" style="margin-bottom:2rem">
                         <div class="column-3">
                             <h3 style="color:#f56">Birthday Package</h3>
                             <h4 style="color: black;margin: 0;">Birthday Cake</h4>
@@ -76,7 +76,9 @@
 
                     <input type="radio"name="cpackage" value="Birthday Package" style="width: 30px;">Birthday Package
                     <br>
-                    <input type="radio"name="cpackage" value="bday" style="width: 30px;">Anniversary Package
+                    <input type="radio"name="cpackage" value="Aniversary Package" style="width: 30px;">Anniversary Package
+                    <br>
+                    <input type="radio"name="cpackage" value="Wedding Package" style="width: 30px;">Wedding Package
 
                     <h1>Additional Details</h1>
                     <input type="text" name="cadditional" placeholder="Additional Notes" width="500px" style="width: 70%;height: 30%;">
