@@ -19,6 +19,8 @@
     <script>
         let today = new Date().toISOString().split('T')[0];
         document.getElementsByName("cdate")[0].attr('min', today);
+        console.log(today);
+        console.log(document.getElementsByName("cdate")[0].min;);
     </script>
 </head>
 
