@@ -212,21 +212,7 @@ function generatePDF () {
     var pdf = new jsPDF()
     pdf.fromHTML(
         //Content
-        document.getElementById('pdf-wrapper'),
-        //X margin
-        margins.left,
-        //Y Margin
-        margins.top,
-        //Settings
-        {
-        width: margins.width 
-        },
-        //callBack
-        function (dispose) {
-        
-        },
-        //Margins
-        margins
+        document.getElementById('pdf-wrapper')
     );
     pdf.save("PartyMania-Report.pdf");
 
