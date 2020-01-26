@@ -156,23 +156,22 @@
     <section>
         <?php
         require_once 'koolreport/core/autoload.php';
-        use \koolreport\widgets\koolphp\Table;
+        use \koolreport\datasources\PdoDataSource;
         use \koolreport\widgets\google\ColumnChart;
 
-        $data = array(
-            array("category"=>"Books","sale"=>32000,"cost"=>20000,"profit"=>12000),
-            array("category"=>"Accessories","sale"=>43000,"cost"=>36000,"profit"=>7000),
-            array("category"=>"Phones","sale"=>54000,"cost"=>39000,"profit"=>15000),
-            array("category"=>"Movies","sale"=>23000,"cost"=>18000,"profit"=>5000),
-            array("category"=>"Others","sale"=>12000,"cost"=>6000,"profit"=>6000)
+        $connection = array(
+            "connectionString"=>"mysql:host=localhost;dbname=partymania",
+            "username"=>"root",
+            "password"=>"",
+            "charset"=>"utf8"
         );
 
-        Table::create(array(
-            "dataSource"=>$data
-        ));
-
         ColumnChart::create(array(
-            "dataSource"=>$data
+            "dataSource"=>(new PdoDataSource($connection))->query("
+                SELECT customerName,sum(amount) as total
+                FROM orders
+                GROUP BY customerName
+            ")
         ));
         ?>
     </section>
