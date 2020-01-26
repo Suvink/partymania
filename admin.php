@@ -18,14 +18,15 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>PartyMania!</title>
-</head>
-
-<body>
      <!-- JSPDF Library -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" 
             crossorigin="anonymous">
         </script>
         <script src="js/script.js">
+</head>
+
+<body>
+    
 <div id="pdf-wrapper">
         <div class="header">
             <div class="title">
