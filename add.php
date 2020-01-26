@@ -68,7 +68,7 @@
                     <input type="radio"name="cpackage" value="bday" style="width: 30px;">Farewell Package
 
                     <h1>Additional Details</h1>
-                    <input type="text" name="cadditional" placeholder="Additional Notes" width="500px" style="width: 70%;height: 30%;" required>
+                    <input type="text" name="cadditional" placeholder="Additional Notes" width="500px" style="width: 70%;height: 30%;">
                     <br><br>
                     <button type="submit" name="submit" value="submit" style="background-color: #f56; color: white !important; border: none;box-shadow: none;">Add Order</button>
                 </form>
