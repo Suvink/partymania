@@ -9,7 +9,7 @@ try
     // run the conversion and write the result to a file
     $client->convertUrlToFile("http://35.247.185.195/partymania/printpreview.html", "PartyMania-Report.pdf");
     echo 'harii';
-    header('PartyMania-Report.pdf');   
+    header('Location: PartyMania-Report.pdf');
 }
 catch(\Pdfcrowd\Error $why)
 {
