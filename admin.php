@@ -189,7 +189,7 @@
             echo '<h1 style="color: #f56">Event Timeline</h1>';
             Timeline::create(array(
                 "dataSource"=>(new PdoDataSource($connection))->query("
-                    SELECT name, package, date 
+                    SELECT date, orderid
                     FROM orders
                 "),
                 "withoutLoader"=>true
