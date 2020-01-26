@@ -18,7 +18,7 @@
     <!-- Set Min date -->
     <script>
         let today = new Date().toISOString().split('T')[0];
-        document.getElementsByName("cdate")[0].setAttribute('min', today);
+        document.getElementByID("dtp")[0].setAttribute('min', today);
         console.log(today);
         console.log(document.getElementsByName("cdate").min);
     </script>
@@ -48,7 +48,7 @@
                 <form method="POST" action="./php/additem.php"> 
                     <h1>Basic Details</h1>
                     <input type="text" name="cname" placeholder="Customer's Name" width="500px" style="width: 70%;" required>
-                    <input type="date" name="cdate" placeholder="Date of the event" width="500px" min="2020-01-01" style="width: 70%;" required>
+                    <input type="date" id="dtp" name="cdate" placeholder="Date of the event" width="500px" min="2020-01-01" style="width: 70%;" required>
                     <input type="text" name="cvenue" placeholder="Address of the Venue" width="500px" style="width: 70%;" required>
                     <input type="number" name="cparticipants" placeholder="Expected no.of participants" width="500px" style="width: 70%;" required>
                     <input type="text" name="cnumber" placeholder="Contact Number" width="500px" style="width: 70%;" required>
