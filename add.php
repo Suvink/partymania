@@ -14,14 +14,6 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>PartyMania!</title>
-
-    <!-- Set Min date -->
-    <script>
-        let today = new Date().toISOString().split('T')[0];
-        document.getElementById("dtp").setAttribute('min', today);
-        console.log(today);
-        console.log(document.getElementsByName("cdate").min);
-    </script>
 </head>
 
 <body>
@@ -97,4 +89,11 @@
         </center>
     </section>
 
+    <!-- Set Min date -->
+    <script>
+        let today = new Date().toISOString().split('T')[0];
+        document.getElementById("dtp").setAttribute('min', today);
+        console.log(today);
+        console.log(document.getElementsByName("cdate").min);
+    </script>
 </body>
