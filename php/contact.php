@@ -52,7 +52,7 @@ function sendEmail($customerEmail,$customerName,$email_string){
 sendEmail($adminemail,$name,$email_string);
 
 //Redirection
-header('Location: ../contact.php?success');
+header('Location: ../contact.html?success');
 
 
 
