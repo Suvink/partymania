@@ -167,9 +167,17 @@
             "password"=>"",
             "charset"=>"utf8"
         );
-
+        echo '<h1 style="color: #f56">Package Dostribution Chart</h1>';
         BarChart::create(array(
-            "title"=>"Package Distribution",
+            "columns" => array(
+                "Aniversary Package" => array(
+                    "style"=>function($row){
+                        return "color:#dc3a2f";
+                    }
+                ),
+                "Birthday Package",
+                "Wedding Package"
+            ),
             "dataSource"=>(new PdoDataSource($connection))->query("
                 SELECT package,COUNT(package) as Count
                 FROM orders
