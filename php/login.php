@@ -27,6 +27,6 @@ if ( isset( $_POST['submit'] ) ){
 if ( isset( $_POST['logout'] ) ){
     echo "Logging Out";
     session_destroy();
-    unset($_SESSION);
+    unset($_SESSION['userid']);
     header("Location: ../login.html",TRUE,302);
 }

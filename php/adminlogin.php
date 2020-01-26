@@ -26,5 +26,7 @@ if ( isset( $_POST['submit'] ) ){
 if ( isset( $_POST['logout'] ) ){
     echo "hiiih";
     session_destroy();
+    unset($_SESSION['adminid']);  
     header("Location: ../adminlogin.html");
+
 }
