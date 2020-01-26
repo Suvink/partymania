@@ -171,7 +171,7 @@
         BarChart::create(array(
             "title"=>"Package Distribution",
             "dataSource"=>(new PdoDataSource($connection))->query("
-                SELECT package,COUNT(package)
+                SELECT package,COUNT(package) as Count
                 FROM orders
                 GROUP BY package
             ")
