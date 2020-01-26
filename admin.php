@@ -155,7 +155,7 @@
 
     <section>
         <?php
-        require_once "/koolreport/core/autoload.php";
+        require_once 'koolreport/core/autoload.php';
         use \koolreport\widgets\koolphp\Table;
         use \koolreport\widgets\google\ColumnChart;
 
