@@ -237,16 +237,8 @@
             }
         </script>
     </div>
-    <div id="editor"></div>
    <script>
-        var doc = new jsPDF();
-
-        // document.getElementById('btn-pdf').click(function () {
-        //     doc.fromHTML(document.getElementById('pdf-wrapper').html(), 15, 15, {
-        //         'width': 170,
-        //     });
-        //     doc.save('PartyMania-Report.pdf');
-        // });
+        console.log(document.getElementById('pdf-wrapper'));
 
     </script>
 </body>
