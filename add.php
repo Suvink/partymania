@@ -94,6 +94,5 @@
         let today = new Date().toISOString().split('T')[0];
         document.getElementById("dtp").setAttribute('min', today);
         console.log(today);
-        console.log(document.getElementsByName("cdate").min);
     </script>
 </body>
