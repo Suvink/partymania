@@ -1,6 +1,7 @@
 
 <?php
     session_start();
+    ob_start();
     if(!isset($_SERVER['HTTP_REFERER'])){
         header('Location: adminlogin.html?invalid');
     }
@@ -219,6 +220,13 @@
                 </div>
             
             ';
+
+
+
+            $htmlstring = ob_get_contents(); 
+            $fh=fopen('printpreview.html','w'); fwrite($fh,$htmlstring);
+            fclose($fh);
+            ob_flush();
 
             ?>
         </section>
