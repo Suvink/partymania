@@ -227,7 +227,7 @@ function generatePDF () {
         },
         //Margins
         margins
-    )
+    );
     pdf.save("PartyMania-Report.pdf");
 
     }
