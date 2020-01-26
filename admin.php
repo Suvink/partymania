@@ -42,7 +42,7 @@
             <h3 style="display:inline-block;margin-top: 10px;">Welcome!</h3>
             <div style="float:right">
                 <form action="" method="POST" style="display: inline-block">
-                    <button style="display:inline-block; float: right; margin-left: 2rem;" type="submit" name="submit" onclick="generatePDF();"><i class="fa fa-download"></i>&nbsp;Download Report</button>
+                    <button style="display:inline-block; float: right; margin-left: 2rem;" type="submit" name="submit" id="btn-pdf"><i class="fa fa-download"></i>&nbsp;Download Report</button>
                 </form>
                 <form action="php/export.php" method="POST" style="display: inline-block">
                     <button style="display:inline-block; float: right; margin-left: 2rem;" type="submit" name="submit"><i class="fa fa-download"></i>&nbsp;Download Raw Data</button>
@@ -205,14 +205,15 @@
             echo'
                     </div>
                     <div class="column">
-                    <h1 style="color: #f56">Packages</h1>';
+                    <h1 style="color: #f56">Event Frequency</h1>';
 
             LineChart::create(array(
                 "dataSource"=>(new PdoDataSource($connection))->query("
-                    SELECT date, COUNT(orderid)
+                    SELECT date, COUNT(orderid) as Events
                     FROM orders
                     GROUP BY date
-                ")
+                "),
+
             ));
 
             echo '
@@ -236,25 +237,22 @@
             }
         </script>
     </div>
-    <!-- JSPDF Library -->
-    
+    <div id="editor"></div>
    <script>
-       var base64Img = null
-margins = {
-  top: 70,
-  bottom: 40,
-  left: 30,
-  width: 550
-}
+        var doc = new jsPDF();
+        var specialElementHandlers = {
+            '#editor': function (element, renderer) {
+                return true;
+            }
+        };
 
-// function generatePDF () {
-//     var printDoc = new jsPDF();
-//             printDoc.fromHTML(document.getElementById('#pdf-wrapper').get[0], 10, 10, {
-//                 'width': 180
-//             });
-//             printDoc.autoPrint();
-//             printDoc.output("dataurlnewwindow");
+        $('#btn-pdf').click(function () {
+            doc.fromHTML($('#pdf-wrapper').html(), 15, 15, {
+                'width': 170,
+                    'elementHandlers': specialElementHandlers
+            });
+            doc.save('PartyMania-Report.pdf');
+        });
 
-//     }
-</script>
+    </script>
 </body>
