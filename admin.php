@@ -177,7 +177,7 @@
             );
 
 
-            echo '<h1 style="color: #f56">Package Dostribution Chart</h1>';
+            echo '<h1 style="color: #f56">Package Distribution Chart</h1>';
             BarChart::create(array(
                 "dataSource"=>(new PdoDataSource($connection))->query("
                     SELECT package,COUNT(package) as Count
