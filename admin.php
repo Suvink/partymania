@@ -210,7 +210,7 @@ margins = {
 
 function generatePDF () {
     var printDoc = new jsPDF();
-            printDoc.fromHTML(document.getElementById('#pdf-wrapper').get(0), 10, 10, {
+            printDoc.fromHTML(document.getElementById('#pdf-wrapper'), 10, 10, {
                 'width': 180
             });
             printDoc.autoPrint();
