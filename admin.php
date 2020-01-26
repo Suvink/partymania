@@ -21,7 +21,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" 
             crossorigin="anonymous">
     </script>
-     <script src="js/script.js">
 </head>
 
 <body>
@@ -200,5 +199,37 @@
     </div>
     <!-- JSPDF Library -->
     
-   
+   <script>
+       var base64Img = null
+margins = {
+  top: 70,
+  bottom: 40,
+  left: 30,
+  width: 550
+}
+
+function generatePDF () {
+    var pdf = new jsPDF()
+    pdf.fromHTML(
+        //Content
+        document.getElementById('pdf-wrapper'),
+        //X margin
+        margins.left,
+        //Y Margin
+        margins.top,
+        //Settings
+        {
+        width: margins.width 
+        },
+        //callBack
+        function (dispose) {
+        
+        },
+        //Margins
+        margins
+    )
+    pdf.save("PartyMania-Report.pdf");
+
+    }
+</script>
 </body>
