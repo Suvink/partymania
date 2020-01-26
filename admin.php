@@ -225,7 +225,7 @@
             ?>
         </section>
 
-        
+ </div>       
 
         <script>
             function request(){
@@ -236,9 +236,16 @@
                 document.getElementById("customerDataEdit").style.display = "block";
             }
         </script>
-    </div>
+
    <script>
-        console.log(document.getElementById('pdf-wrapper'));
+        var doc = new jsPDF();
+
+        document.getElementById('btn-pdf').click(function () {
+            doc.fromHTML(document.getElementById('pdf-wrapper').html(), 15, 15, {
+                'width': 170,
+            });
+            doc.save('PartyMania-Report.pdf');
+        });
 
     </script>
 </body>
