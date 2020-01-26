@@ -166,7 +166,7 @@
             "charset"=>"utf8"
         );
 
-        ColumnChart::create(array(
+        BarChart::create(array(
             "title"=>"Package Distribution",
             "dataSource"=>(new PdoDataSource($connection))->query("
                 SELECT package,COUNT(package)
