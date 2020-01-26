@@ -123,7 +123,7 @@ if(!isset($_SESSION['userid'])){
                     }
                 }
                 else{
-                    echo "Something went wrong!";
+                    echo "No Results!";
                 }
             $con-> close();
 
