@@ -209,14 +209,12 @@ margins = {
 }
 
 function generatePDF () {
-    var pdf = new jsPDF()
-    pdf.fromHTML(
-        //Content
-        document.getElementById('pdf-wrapper'),10, 10, {
+    var printDoc = new jsPDF();
+            printDoc.fromHTML(Document.getElementById('#pdf-wrapper').get(0), 10, 10, {
                 'width': 180
-            }
-    );
-    pdf.output("PartyMania-Report.pdf");
+            });
+            printDoc.autoPrint();
+            printDoc.output("dataurlnewwindow");
 
     }
 </script>
