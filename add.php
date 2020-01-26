@@ -14,6 +14,12 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>PartyMania!</title>
+
+    <!-- Set Min date -->
+    <script>
+        var today = new Date().toISOString().split('T')[0];
+        document.getElementsByName("cdate")[0].setAttribute('min', today);
+    </script>
 </head>
 
 <body>
@@ -40,7 +46,7 @@
                 <form method="POST" action="./php/additem.php"> 
                     <h1>Basic Details</h1>
                     <input type="text" name="cname" placeholder="Customer's Name" width="500px" style="width: 70%;" required>
-                    <input type="date" name="cdate" placeholder="Date of the event" width="500px" style="width: 70%;" required>
+                    <input type="date" name="cdate" placeholder="Date of the event" width="500px" min="2020-01-01" style="width: 70%;" required>
                     <input type="text" name="cvenue" placeholder="Address of the Venue" width="500px" style="width: 70%;" required>
                     <input type="number" name="cparticipants" placeholder="Expected no.of participants" width="500px" style="width: 70%;" required>
                     <input type="text" name="cnumber" placeholder="Contact Number" width="500px" style="width: 70%;" required>
