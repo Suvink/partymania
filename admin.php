@@ -167,8 +167,9 @@
         );
 
         ColumnChart::create(array(
+            "title"=>"Package Distribution",
             "dataSource"=>(new PdoDataSource($connection))->query("
-                SELECT name,package
+                SELECT package,COUNT(package)
                 FROM orders
                 GROUP BY package
             ")
