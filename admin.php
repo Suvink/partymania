@@ -168,9 +168,9 @@
 
         ColumnChart::create(array(
             "dataSource"=>(new PdoDataSource($connection))->query("
-                SELECT customerName,sum(amount) as total
+                SELECT customerName,package
                 FROM orders
-                GROUP BY customerName
+                GROUP BY package
             ")
         ));
         ?>
