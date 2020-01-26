@@ -72,7 +72,8 @@ if(!isset($_SESSION['userid'])){
                 <h4 style="margin:0">Anniversary Cake</h4>
                 <h4 style="margin:0">Invitations</h4>
                 <h4 style="margin:0">Roses and Decorations</h4>
-                <h4 style="margin:0">Venue including food</h4>
+                <h4 style="margin:0">Venue</h4>
+                <h4 style="margin:0">Food</h4>
                 <h2 style="margin-bottom:10px;margin-top: 20px; color:#f56;">LKR 75,000.00</h2>
             </div>
         </div>
