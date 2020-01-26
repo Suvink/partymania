@@ -48,7 +48,7 @@
                     <h1>Package Details</h1>
                     <div class="row">
                         <div class="column">
-                            <h3>Birthday Package</h3>
+                            <h3 style="color:#f56">Birthday Package</h3>
                             <h4 style="color: black;margin: 0;">Birthday Cake</h4>
                             <h4 style="color: black;margin: 0;">Invitations</h4>
                             <h4 style="color: black;margin: 0;">Party Props</h4>
@@ -56,7 +56,7 @@
                             <h4 style="color: black;margin: 0;">Music</h4>
                            </div>
                         <div class="column">
-                            <h3>Anniversary Package</h3>
+                            <h3 style="color:#f56">Anniversary Package</h3>
                             <ol>
                                 <h4 style="color: black;margin: 0;">Anniversary Cake</h4>
                                 <h4 style="color: black;margin: 0;">Invitations</h4>
