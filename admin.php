@@ -166,6 +166,7 @@
             use \koolreport\datasources\PdoDataSource;
             use \koolreport\widgets\google\ColumnChart;
             use \koolreport\widgets\google\BarChart;
+            use \koolreport\widgets\google\Timeline;
 
 
             $connection = array(
@@ -174,6 +175,8 @@
                 "password"=>"",
                 "charset"=>"utf8"
             );
+
+
             echo '<h1 style="color: #f56">Package Dostribution Chart</h1>';
             BarChart::create(array(
                 "dataSource"=>(new PdoDataSource($connection))->query("
@@ -182,6 +185,25 @@
                     GROUP BY package
                 ")
             ));
+
+            echo '<h1 style="color: #f56">Event Timeline</h1>';
+            Timeline::create(array(
+                "dataSource"=>(new PdoDataSource($connection))->query("
+                    SELECT name, package, date 
+                    FROM orders
+                "),
+                "columns"=>array(
+                    "President",
+                    "Start"=>array(
+                        "type"=>"date",
+                    ),
+                    "End"=>array(
+                        "type"=>"date",
+                    )
+                ),
+                "withoutLoader"=>true
+            ));
+
             ?>
         </section>
 
@@ -208,14 +230,14 @@ margins = {
   width: 550
 }
 
-function generatePDF () {
-    var printDoc = new jsPDF();
-            printDoc.fromHTML(document.getElementById('#pdf-wrapper').get[0], 10, 10, {
-                'width': 180
-            });
-            printDoc.autoPrint();
-            printDoc.output("dataurlnewwindow");
+// function generatePDF () {
+//     var printDoc = new jsPDF();
+//             printDoc.fromHTML(document.getElementById('#pdf-wrapper').get[0], 10, 10, {
+//                 'width': 180
+//             });
+//             printDoc.autoPrint();
+//             printDoc.output("dataurlnewwindow");
 
-    }
+//     }
 </script>
 </body>
