@@ -230,7 +230,6 @@
 
             ?>
         </section>
-        <a href="http://pdfcrowd.com/http://35.247.185.195/partymania/admin.php/">Save this page to a PDF</a>
 
  </div>       
 
