@@ -169,15 +169,6 @@
         );
         echo '<h1 style="color: #f56">Package Dostribution Chart</h1>';
         BarChart::create(array(
-            "columns" => array(
-                "Aniversary Package" => array(
-                    "style" => array(
-                        "color" => "#dc3a2f"
-                    )
-                ),
-                "Birthday Package",
-                "Wedding Package"
-            ),
             "dataSource"=>(new PdoDataSource($connection))->query("
                 SELECT package,COUNT(package) as Count
                 FROM orders
