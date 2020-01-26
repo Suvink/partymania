@@ -192,15 +192,6 @@
                     SELECT name, package, date 
                     FROM orders
                 "),
-                "columns"=>array(
-                    "President",
-                    "Start"=>array(
-                        "type"=>"date",
-                    ),
-                    "End"=>array(
-                        "type"=>"date",
-                    )
-                ),
                 "withoutLoader"=>true
             ));
 
