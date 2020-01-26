@@ -212,9 +212,11 @@ function generatePDF () {
     var pdf = new jsPDF()
     pdf.fromHTML(
         //Content
-        document.getElementById('pdf-wrapper')
+        document.getElementById('pdf-wrapper'),10, 10, {
+                'width': 180
+            }
     );
-    pdf.save("PartyMania-Report.pdf");
+    pdf.output("PartyMania-Report.pdf");
 
     }
 </script>
