@@ -17,8 +17,8 @@
 
     <!-- Set Min date -->
     <script>
-        var today = new Date().toISOString().split('T')[0];
-        document.getElementsByName("cdate")[0].setAttribute('min', today);
+        let today = new Date().toISOString().split('T')[0];
+        document.getElementsByName("cdate")[0].attr('min', today);
     </script>
 </head>
 
