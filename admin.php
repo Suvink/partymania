@@ -209,7 +209,7 @@
 
             LineChart::create(array(
                 "dataSource"=>(new PdoDataSource($connection))->query("
-                    SELECT date, orderid
+                    SELECT date, COUNT(orderid)
                     FROM orders
                     GROUP BY date
                 ")
