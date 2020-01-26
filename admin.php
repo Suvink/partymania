@@ -158,6 +158,8 @@
         require_once 'koolreport/core/autoload.php';
         use \koolreport\datasources\PdoDataSource;
         use \koolreport\widgets\google\ColumnChart;
+        use \koolreport\widgets\google\BarChart;
+
 
         $connection = array(
             "connectionString"=>"mysql:host=localhost;dbname=partymania",
@@ -169,7 +171,7 @@
         BarChart::create(array(
             "title"=>"Package Distribution",
             "dataSource"=>(new PdoDataSource($connection))->query("
-                SELECT package,COUNT(package)
+                SELECT package,COUNT(package) as 
                 FROM orders
                 GROUP BY package
             ")
