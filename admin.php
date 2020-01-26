@@ -39,7 +39,7 @@
             <h3 style="display:inline-block;margin-top: 10px;">Welcome!</h3>
             <div style="float:right">
                 <form action="" method="POST" style="display: inline-block">
-                    <button style="display:inline-block; float: right; margin-left: 2rem;" type="submit" name="submit"><i class="fa fa-download"></i>&nbsp;Download Report</button>
+                    <button style="display:inline-block; float: right; margin-left: 2rem;" type="submit" name="submit" onclick="generatePDF();"><i class="fa fa-download"></i>&nbsp;Download Report</button>
                 </form>
                 <form action="php/export.php" method="POST" style="display: inline-block">
                     <button style="display:inline-block; float: right; margin-left: 2rem;" type="submit" name="submit"><i class="fa fa-download"></i>&nbsp;Download Raw Data</button>
