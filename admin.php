@@ -18,8 +18,6 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>PartyMania!</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" 
-            crossorigin="anonymous">
     </script>
 </head>
 
@@ -237,15 +235,24 @@
             }
         </script>
 
-   <script>
-        var doc = new jsPDF();
-
-        document.getElementById('btn-pdf').click(function () {
-            doc.fromHTML(document.getElementById('pdf-wrapper').html(), 15, 15, {
-                'width': 170,
-            });
-            doc.save('PartyMania-Report.pdf');
-        });
-
-    </script>
 </body>
+
+<?php
+
+    require_once 'Dompdf/autoload.inc.php';
+    use Dompdf\Dompdf;
+
+    // instantiate and use the dompdf class
+    $dompdf = new Dompdf();
+    $dompdf->loadHtml('hello world');
+
+    // (Optional) Setup the paper size and orientation
+    $dompdf->setPaper('A4', 'landscape');
+
+    // Render the HTML as PDF
+    $dompdf->render();
+
+    // Output the generated PDF to Browser
+    $dompdf->stream();
+
+?>
