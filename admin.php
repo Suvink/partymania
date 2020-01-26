@@ -31,7 +31,7 @@
             </div>
             <div class="icons">
                 <i class="sm fa fa-user"></i>
-                <form action="php/login.php" method="POST" style="display: inline-block;">
+                <form action="php/adminlogin.php" method="POST" style="display: inline-block;">
                     <button name="logout" style="display: inline-block; color: grey">Logout</button>
                 </form>
             </div>
