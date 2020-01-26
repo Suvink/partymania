@@ -171,9 +171,9 @@
         BarChart::create(array(
             "columns" => array(
                 "Aniversary Package" => array(
-                    "style"=>function($row){
-                        return "color:#dc3a2f";
-                    }
+                    "style" => array(
+                        "color" => "#dc3a2f"
+                    )
                 ),
                 "Birthday Package",
                 "Wedding Package"
