@@ -166,7 +166,7 @@
             use \koolreport\datasources\PdoDataSource;
             use \koolreport\widgets\google\ColumnChart;
             use \koolreport\widgets\google\BarChart;
-            use \koolreport\widgets\google\Timeline;
+            use \koolreport\widgets\google\PieChart;
 
 
             $connection = array(
