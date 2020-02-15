@@ -19,45 +19,14 @@
     if ($con->query($sql) === TRUE) {
         echo("Done");
 
-        // $email_string = $emailString1 + '
-    
-        // <h3 style="margin-bottom: 0"> Date</h3 style="margin-bottom: 0">
-        // <h6 style="margin-top: 0;">'.$event_date.'</h6>
-    
-        // <h3 style="margin-bottom: 0"> Venue</h3 style="margin-bottom: 0">
-        // <h6 style="margin-top: 0;">'.$event_venue.'</h6>
-    
-        // <h3 style="margin-bottom: 0"> Participants</h3 style="margin-bottom: 0">
-        // <h6 style="margin-top: 0;">'.$event_participants.'</h6>
-    
-        // <h3 style="margin-bottom: 0"> Package</h3 style="margin-bottom: 0">
-        // <h6 style="margin-top: 0;">'.$event_participants.'</h6>
-    
-        // <h3 style="margin-bottom: 0">Remarks</h3 style="margin-bottom: 0">
-        // <h6 style="margin-top: 0;">'.$additional_details.'</h6>
-        
-        // ' + $emailString2;
-    
-        // //Email sending
-        // function sendEmail($customerEmail,$customerName,$email_string){
-        //     $mailin = new Mailin("https://api.sendinblue.com/v2.0","D1Egd9HxOFSwbPUQ");
-        //     $data = array( "to" => array($customerEmail=>$customerName),
-        //         "from" => array("noreply@partymania.tk", "PartyMania"),
-        //         "subject" => "PartyMania Site Contact",
-        //         "html" => $email_string
-        //     );
-        //     var_dump($mailin->send_email($data));
-        // }
-        // //Send Confirmation Email
-        // sendEmail($adminemail,$name,$email_string);
-
         // // //SendSMS
-        $smsText = "Hi ".$customer_name."\nWelcome to NOI! Please refer your email for furthur information. Happy Coding!\n -Team NOI-";
+        $order_no = rand(10,10000);
+        $smsText = "Hi ".$customer_name."\nThank you for your order. Your order reference is PMY-".$order_no."!\n -PartyMania-";
         $user = "94771655198";
         $password = "1357";
         $text = urlencode($smsText);
 
-        $to = $phone;
+        $to = $phone_no;
         $baseurl ="http://www.textit.biz/sendmsg";
         $url = "$baseurl/?id=$user&pw=$password&to=$to&text=$text";
         $ret = file($url);
