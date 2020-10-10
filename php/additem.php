@@ -22,8 +22,8 @@
         // // //SendSMS
         $order_no = rand(10,10000);
         $smsText = "Hi ".$customer_name."\nThank you for your order. Your order reference is PMY-".$order_no."!\n -PartyMania-";
-        $user = "94771655198";
-        $password = "1357";
+        $user = "07712345678";
+        $password = "123456789";
         $text = urlencode($smsText);
 
         $to = $phone_no;
